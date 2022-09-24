@@ -11,6 +11,7 @@
 		<li><a>Allow Access to Group Activities</a>
 		<li><a>Create User Experiences</a>
 		<li><a>Encourage Participation and Growth in Related Technologies</a>
+		<li><a>Use Stellar NFTs to control access utilizing NFC</a>
 	<p>Add More Content Here</p>
 <article>
 	<h2>Timeline and Milestones:</h2>
