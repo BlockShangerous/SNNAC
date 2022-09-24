@@ -1,0 +1,1221 @@
+[
+    {
+        "id": "371740748292f1c0",
+        "type": "tab",
+        "label": "SNNAC",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7f70e081f2c4d343",
+        "type": "ui_text_input",
+        "z": "371740748292f1c0",
+        "name": "NFT - Name",
+        "label": "NFT - Name",
+        "tooltip": "",
+        "group": "8aa36cc8e51651d6",
+        "order": 10,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 350,
+        "y": 1240,
+        "wires": [
+            [
+                "33ba0f782aa8e263"
+            ]
+        ]
+    },
+    {
+        "id": "4824c08950367102",
+        "type": "ui_text_input",
+        "z": "371740748292f1c0",
+        "name": "NFT Issuer",
+        "label": "NFT Issuer",
+        "tooltip": "",
+        "group": "8aa36cc8e51651d6",
+        "order": 11,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 350,
+        "y": 1160,
+        "wires": [
+            [
+                "8fa2021645f5915c"
+            ]
+        ]
+    },
+    {
+        "id": "8fa2021645f5915c",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "nftiss",
+        "func": "var nftiss = msg.payload\nflow.set('nftiss',nftiss);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 590,
+        "y": 1160,
+        "wires": [
+            [
+                "d1541608e613ebcf"
+            ]
+        ]
+    },
+    {
+        "id": "33ba0f782aa8e263",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "nftname",
+        "func": "var nftname = msg.payload\nflow.set('nftname',nftname);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 600,
+        "y": 1240,
+        "wires": [
+            [
+                "d1541608e613ebcf"
+            ]
+        ]
+    },
+    {
+        "id": "241c745c438004a0",
+        "type": "ui_dropdown",
+        "z": "371740748292f1c0",
+        "name": "",
+        "label": "Network",
+        "tooltip": "",
+        "place": "Test",
+        "group": "8aa36cc8e51651d6",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Test",
+                "value": "test",
+                "type": "str"
+            },
+            {
+                "label": "Public",
+                "value": "public",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 340,
+        "y": 1320,
+        "wires": [
+            [
+                "55f9a08003d7a000",
+                "4708f44a1918185b"
+            ]
+        ]
+    },
+    {
+        "id": "55f9a08003d7a000",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "network",
+        "func": "var network = msg.payload\nflow.set('network',network);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is deployed.\nvar network = \"test\"\nflow.set('network',network);",
+        "finalize": "",
+        "x": 600,
+        "y": 1320,
+        "wires": [
+            [
+                "d1541608e613ebcf"
+            ]
+        ]
+    },
+    {
+        "id": "44d9711ddd308977",
+        "type": "ui_toast",
+        "z": "371740748292f1c0",
+        "position": "top right",
+        "displayTime": "60",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "",
+        "x": 840,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "4708f44a1918185b",
+        "type": "switch",
+        "z": "371740748292f1c0",
+        "name": "Network Warning",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "test",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "public",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 450,
+        "y": 1380,
+        "wires": [
+            [],
+            [
+                "86b7f2c30abdb3b5"
+            ]
+        ]
+    },
+    {
+        "id": "86b7f2c30abdb3b5",
+        "type": "change",
+        "z": "371740748292f1c0",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "This is highly experimental. You probably shouldn't use this on public. Your secret key will not be secure in this environment, please use the XDR in a signer. Do not input a secret key from an account you care about.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 1380,
+        "wires": [
+            [
+                "44d9711ddd308977"
+            ]
+        ]
+    },
+    {
+        "id": "909eb806d1e4542b",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "get price",
+        "func": "var StellarSdk = flow.get(\"StellarSdk\");\nvar server = flow.get('server',server);\nvar nftname = flow.get('nftname',nftname)\nvar nftiss = flow.get('nftiss',nftiss)\nmsg.issuer=nftiss\n\nserver\n  .orderbook(\n    \n    new StellarSdk.Asset(\n      nftname,\n      nftiss,\n    ),\n    new StellarSdk.Asset.native(),\n  )\n  .call()\n  .then(function (resp) {\n   // console.log(resp);\n    msg.book=resp\n    //msg.payload=resp\n    msg.price=resp.asks[0].price*.0000001\n    msg.price=msg.price.toFixed(7)\n    msg.payload=msg.price+\" XLM\"\n\n    //msg.price=1/msg.price\n    node.send(msg)\n  })\n\n    .then(function (resp) {\n   \n    })\n     //flow.set('transaction',transaction);\n     // node.send(msg)\n   // return server.submitTransaction(transaction);\n // })\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 740,
+        "wires": [
+            [
+                "0bd0e3abf44a3807",
+                "6bf6d468162fadf0",
+                "3f474eccaa2ebbfd"
+            ]
+        ]
+    },
+    {
+        "id": "0bd0e3abf44a3807",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1170,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "6bf6d468162fadf0",
+        "type": "ui_text",
+        "z": "371740748292f1c0",
+        "group": "b7bc8c2.90c527",
+        "order": 8,
+        "width": "0",
+        "height": "0",
+        "name": "Price",
+        "label": "Price",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1290,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "a5a56d1c44426ee6",
+        "type": "ui_text",
+        "z": "371740748292f1c0",
+        "group": "b7bc8c2.90c527",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "RoyalT",
+        "label": "RoyalT",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1500,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "b3f1ad65afd8daba",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "calculate RoyalT",
+        "func": "msg.royalty=msg.price*.01*msg.royalty\nmsg.royalty=msg.royalty.toFixed(7)\n    msg.payload=msg.royalty+\" XLM\"\n  \n    node.send(msg)\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 1200,
+        "wires": [
+            [
+                "a5a56d1c44426ee6",
+                "b9bc26b47c13ce59",
+                "7f477e7e84b3dfcb"
+            ]
+        ]
+    },
+    {
+        "id": "52c7a69bc02d1a7e",
+        "type": "ui_text",
+        "z": "371740748292f1c0",
+        "group": "b7bc8c2.90c527",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "Total",
+        "label": "Total",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1490,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "b9bc26b47c13ce59",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "calculate total",
+        "func": "var pricedisplay=parseFloat(msg.price)\nvar royaltydisplay=parseFloat(msg.royalty)\n//flow.set('pricedisplay',pricedisplay)\n//flow.set('royaltydisplay',royaltydisplay)\n\n    msg.payload=pricedisplay+royaltydisplay+\" XLM\"\n    node.send(msg)\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1300,
+        "y": 1240,
+        "wires": [
+            [
+                "52c7a69bc02d1a7e",
+                "e58c81ca86e52e37"
+            ]
+        ]
+    },
+    {
+        "id": "e58c81ca86e52e37",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1490,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "7f477e7e84b3dfcb",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1490,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "1ba2cc54958fee7b",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1570,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "3f474eccaa2ebbfd",
+        "type": "http request",
+        "z": "371740748292f1c0",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://horizon-testnet.stellar.org/accounts/{{{issuer}}}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1370,
+        "y": 660,
+        "wires": [
+            [
+                "1ba2cc54958fee7b",
+                "2908f94ed268b016"
+            ]
+        ]
+    },
+    {
+        "id": "f2732732a87f5116",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1670,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "2908f94ed268b016",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "get data",
+        "func": "//msg.royalty=msg.payload.data.[\"royalty '(% base64)'\"]\nmsg.royalty=msg.payload.data.royalty\n//msg.royalty=msg.payload.data[0].price\nmsg.recipient=msg.payload.data.recipient\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1480,
+        "y": 760,
+        "wires": [
+            [
+                "f2732732a87f5116",
+                "8d1e7dc09cbb9e96"
+            ]
+        ]
+    },
+    {
+        "id": "c2af5134f0952ef4",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1790,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "d4c5e121a5aeace9",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1390,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "c4ada15679d83cf1",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "Setup StellarSDK flow.transaction",
+        "func": "var StellarSdk = global.get(\"stellarsdk\");\nvar server = new StellarSdk.Server(\"https://horizon-testnet.stellar.org\");\n\nflow.set('StellarSdk',StellarSdk);\nflow.set('server',server);\n\n      node.send(msg)\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 360,
+        "wires": [
+            [
+                "909eb806d1e4542b",
+                "d4c5e121a5aeace9"
+            ]
+        ]
+    },
+    {
+        "id": "d1541608e613ebcf",
+        "type": "switch",
+        "z": "371740748292f1c0",
+        "name": "Network Switch",
+        "property": "network",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "test",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "public",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 1040,
+        "y": 480,
+        "wires": [
+            [
+                "c4ada15679d83cf1"
+            ],
+            [
+                "d3390b803862fc1a"
+            ]
+        ]
+    },
+    {
+        "id": "d3390b803862fc1a",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "Setup StellarSDK flow.transaction",
+        "func": "var StellarSdk = global.get(\"stellarsdk\");\nvar server = new StellarSdk.Server(\"https://horizon.stellar.org\");\n\nflow.set('StellarSdk',StellarSdk);\nflow.set('server',server);\n\n      node.send(msg)\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 560,
+        "wires": [
+            [
+                "0fedc56a4a8dde87",
+                "396fdcbb0f2c6631"
+            ]
+        ]
+    },
+    {
+        "id": "0fedc56a4a8dde87",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "get price",
+        "func": "var StellarSdk = flow.get(\"StellarSdk\");\nvar server = flow.get('server',server);\nvar nftname = flow.get('nftname',nftname)\nvar nftiss = flow.get('nftiss',nftiss)\nmsg.issuer=nftiss\n\nserver\n  .orderbook(\n    \n    new StellarSdk.Asset(\n      nftname,\n      nftiss,\n    ),\n    new StellarSdk.Asset.native(),\n  )\n  .call()\n  .then(function (resp) {\n   // console.log(resp);\n    msg.book=resp\n    //msg.payload=resp\n    msg.price=resp.asks[0].price*.0000001\n    msg.price=msg.price.toFixed(7)\n    msg.payload=msg.price+\" XLM\"\n\n    //msg.price=1/msg.price\n    node.send(msg)\n  })\n\n    .then(function (resp) {\n   \n    })\n     //flow.set('transaction',transaction);\n     // node.send(msg)\n   // return server.submitTransaction(transaction);\n // })\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 960,
+        "wires": [
+            [
+                "df89188e2bf30ed4",
+                "8faf0a6a6316ada4",
+                "6bf6d468162fadf0"
+            ]
+        ]
+    },
+    {
+        "id": "df89188e2bf30ed4",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1050,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "a3d9decaf5e97f70",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1450,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "8faf0a6a6316ada4",
+        "type": "http request",
+        "z": "371740748292f1c0",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://horizon.stellar.org/accounts/{{{issuer}}}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1250,
+        "y": 880,
+        "wires": [
+            [
+                "a3d9decaf5e97f70",
+                "17164576d2573418"
+            ]
+        ]
+    },
+    {
+        "id": "ac0be1d1d8d3611f",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1550,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "17164576d2573418",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "get data",
+        "func": "//msg.royalty=msg.payload.data.[\"royalty '(% base64)'\"]\nmsg.royalty=msg.payload.data.royalty\n//msg.royalty=msg.payload.data[0].price\nmsg.recipient=msg.payload.data.recipient\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1360,
+        "y": 980,
+        "wires": [
+            [
+                "ac0be1d1d8d3611f",
+                "acc2d84665b78bec"
+            ]
+        ]
+    },
+    {
+        "id": "b0425f1998bf77f6",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1670,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "396fdcbb0f2c6631",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1410,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "5f56bec27facfb74",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "buyer",
+        "func": "var buyer = msg.payload\nflow.set('buyer',buyer);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 760,
+        "wires": [
+            [
+                "1dc19f74c4d2dd89"
+            ]
+        ]
+    },
+    {
+        "id": "8d1e7dc09cbb9e96",
+        "type": "base64",
+        "z": "371740748292f1c0",
+        "name": "",
+        "action": "b64",
+        "property": "royalty",
+        "x": 1610,
+        "y": 840,
+        "wires": [
+            [
+                "c2af5134f0952ef4",
+                "b3f1ad65afd8daba"
+            ]
+        ]
+    },
+    {
+        "id": "acc2d84665b78bec",
+        "type": "base64",
+        "z": "371740748292f1c0",
+        "name": "",
+        "action": "b64",
+        "property": "royalty",
+        "x": 1490,
+        "y": 1060,
+        "wires": [
+            [
+                "b0425f1998bf77f6",
+                "b3f1ad65afd8daba"
+            ]
+        ]
+    },
+    {
+        "id": "0497ce92ea46826e",
+        "type": "comment",
+        "z": "371740748292f1c0",
+        "name": "CHECK BALANCES",
+        "info": "",
+        "x": 550,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "1dc19f74c4d2dd89",
+        "type": "http request",
+        "z": "371740748292f1c0",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://horizon.stellar.org/accounts/GAYOLLLUIZE4DZMBB2ZBKGBUBZLIOYU6XFLW37GBP2VZD3ABNXCW4BVA",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 590,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3e2f3a217963405a",
+        "type": "comment",
+        "z": "371740748292f1c0",
+        "name": "CHECK BALANCE",
+        "info": "",
+        "x": 410,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "c5f6cbc7bcb88217",
+        "type": "ui_text_input",
+        "z": "371740748292f1c0",
+        "name": "Public Key2",
+        "label": "Public Key2",
+        "tooltip": "",
+        "group": "8aa36cc8e51651d6",
+        "order": 6,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 240,
+        "y": 440,
+        "wires": [
+            [
+                "5653cae36090413c"
+            ]
+        ]
+    },
+    {
+        "id": "176dc770a4f9468c",
+        "type": "http request",
+        "z": "371740748292f1c0",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://horizon-testnet.stellar.org/accounts/{{{public}}}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 600,
+        "y": 460,
+        "wires": [
+            [
+                "e6bcdc618d48b4aa",
+                "d9dd78ce93647ebf",
+                "320a63c8fcfe6481"
+            ]
+        ]
+    },
+    {
+        "id": "e6bcdc618d48b4aa",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "5653cae36090413c",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "",
+        "func": "msg.public=msg.payload\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 440,
+        "wires": [
+            [
+                "176dc770a4f9468c",
+                "41420dd2d5f5de9e"
+            ]
+        ]
+    },
+    {
+        "id": "41420dd2d5f5de9e",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "fbfb337acc331862",
+        "type": "ui_text",
+        "z": "371740748292f1c0",
+        "group": "8aa36cc8e51651d6",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "balances result",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 640,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "05864ee1131990b1",
+        "type": "ui_text_input",
+        "z": "371740748292f1c0",
+        "name": "Public Key",
+        "label": "Public Key",
+        "tooltip": "",
+        "group": "8aa36cc8e51651d6",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 190,
+        "y": 820,
+        "wires": [
+            [
+                "a98cdf8611361bf9"
+            ]
+        ]
+    },
+    {
+        "id": "a98cdf8611361bf9",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "Check Balances",
+        "func": "const fetch = global.get(\"nodefetch\");\n\nvar StellarSdk = global.get(\"stellarsdk\");\n// create a completely new and unique pair of keys\n// see more about KeyPair objects: https://stellar.github.io/js-stellar-sdk/Keypair.html\nconst key = msg.payload;\n\n\nconst server = new StellarSdk.Server(\"https://horizon-testnet.stellar.org\");\n// the JS SDK uses promises for most actions, such as retrieving an account\nconst account = await server.loadAccount(key);\n//console.log(\"Balances for account: \" + pair.publicKey());\nmsg.topic = \"Balances for account: \" + key\n\nvar bals = \"\";\n\naccount.balances.forEach(function (balance) {\n  console.log(\"Type:\", balance.asset_type, \", Balance:\", balance.balance);\n  msg.payload = \"Type: \"+ balance.asset_code+\", Balance: \"+balance.balance+\" \\n \"\n  //node.send(msg)\n  bals = bals +\" \"+ msg.payload\n});\n\nmsg.payload = bals\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 400,
+        "y": 820,
+        "wires": [
+            [
+                "12983259244d19a0",
+                "fbfb337acc331862"
+            ]
+        ]
+    },
+    {
+        "id": "12983259244d19a0",
+        "type": "ui_text",
+        "z": "371740748292f1c0",
+        "group": "8aa36cc8e51651d6",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Balances header",
+        "label": "",
+        "format": "{{msg.topic}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 650,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "320a63c8fcfe6481",
+        "type": "ui_text",
+        "z": "371740748292f1c0",
+        "group": "8aa36cc8e51651d6",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "balances result",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 780,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "d9dd78ce93647ebf",
+        "type": "ui_text",
+        "z": "371740748292f1c0",
+        "group": "8aa36cc8e51651d6",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "Balances header",
+        "label": "",
+        "format": "{{msg.topic}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 790,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "53b960e2d0f718d5",
+        "type": "comment",
+        "z": "371740748292f1c0",
+        "name": "NFC READER",
+        "info": "",
+        "x": 241.42857360839844,
+        "y": 1575.71435546875,
+        "wires": []
+    },
+    {
+        "id": "549b8729ffafddf3",
+        "type": "usbscan",
+        "z": "371740748292f1c0",
+        "name": "usbscan",
+        "topic": "usb",
+        "x": 330,
+        "y": 1680,
+        "wires": [
+            [
+                "b951ff96cc57ec5b"
+            ]
+        ]
+    },
+    {
+        "id": "d45cbc5ad5368335",
+        "type": "usbenum",
+        "z": "371740748292f1c0",
+        "name": "usbenum",
+        "devid": "0000:0000",
+        "x": 360,
+        "y": 1780,
+        "wires": [
+            [
+                "1f5b39826d29ad6b"
+            ]
+        ]
+    },
+    {
+        "id": "80eb5329c30bb177",
+        "type": "inject",
+        "z": "371740748292f1c0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 1680,
+        "wires": [
+            [
+                "549b8729ffafddf3"
+            ]
+        ]
+    },
+    {
+        "id": "1828e6be9c58d279",
+        "type": "inject",
+        "z": "371740748292f1c0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 1780,
+        "wires": [
+            [
+                "d45cbc5ad5368335"
+            ]
+        ]
+    },
+    {
+        "id": "b951ff96cc57ec5b",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "1f5b39826d29ad6b",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "6ecd422d1a07f3fc",
+        "type": "ui_spacer",
+        "z": "371740748292f1c0",
+        "name": "spacer",
+        "group": "8aa36cc8e51651d6",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ac996fd1dbf780d8",
+        "type": "ui_spacer",
+        "z": "371740748292f1c0",
+        "name": "spacer",
+        "group": "8aa36cc8e51651d6",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8aa36cc8e51651d6",
+        "type": "ui_group",
+        "name": "SNNAC",
+        "tab": "cbfade9f6abdb499",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b7bc8c2.90c527",
+        "type": "ui_group",
+        "name": "RoyalT Bubble",
+        "tab": "058b1a2738c0aa8b",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cbfade9f6abdb499",
+        "type": "ui_tab",
+        "name": "SNNAC",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "058b1a2738c0aa8b",
+        "type": "ui_tab",
+        "name": "Buy",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
