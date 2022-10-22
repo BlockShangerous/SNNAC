@@ -1,0 +1,899 @@
+[
+    {
+        "id": "fece67b7.0fd7b8",
+        "type": "tab",
+        "label": "DB",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "9819f41.7ab5308",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "CREATE",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "CREATE TABLE Members(Member INTEGER, NFC TEXT, Name TEXT, PublicKey NUMERIC)",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "2d5094b7.c1f91c"
+            ]
+        ]
+    },
+    {
+        "id": "d4bbaf4e.2603a",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "INSERT",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "INSERT INTO TeleUsersTest(id, public, private) values(358, \"WZAH51\", \"lK257\")",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 140,
+        "wires": [
+            [
+                "7bc75688.10d5f8"
+            ]
+        ]
+    },
+    {
+        "id": "b4b746d3.657998",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "SELECT",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM Loans",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 180,
+        "wires": [
+            [
+                "7bc75688.10d5f8"
+            ]
+        ]
+    },
+    {
+        "id": "8d1a9bda.9f6a38",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "DELETE",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "DELETE from Loans",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 220,
+        "wires": [
+            [
+                "7bc75688.10d5f8"
+            ]
+        ]
+    },
+    {
+        "id": "e4aef7ba.21bd88",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "DROP",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "DROP TABLE Loans",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 260,
+        "wires": [
+            [
+                "7bc75688.10d5f8"
+            ]
+        ]
+    },
+    {
+        "id": "22add297.10664e",
+        "type": "debug",
+        "z": "fece67b7.0fd7b8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "7399496b.c08548",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "SELECT 357",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM TeleUsersTest WHERE id=357",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 460,
+        "wires": [
+            [
+                "7bc75688.10d5f8"
+            ]
+        ]
+    },
+    {
+        "id": "a0cc81e4.4f98b",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "user 358",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "358",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "356",
+        "payloadType": "num",
+        "x": 120,
+        "y": 540,
+        "wires": [
+            [
+                "ce55b912.a85468"
+            ]
+        ]
+    },
+    {
+        "id": "e7a24e6a.083c7",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "SELECT user",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM TeleUsersTest WHERE id=user",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 500,
+        "wires": [
+            [
+                "2409c21c.d8398e"
+            ]
+        ]
+    },
+    {
+        "id": "ce55b912.a85468",
+        "type": "function",
+        "z": "fece67b7.0fd7b8",
+        "name": "",
+        "func": "var user = msg.payload\nflow.set('user',user)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 300,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2409c21c.d8398e",
+        "type": "function",
+        "z": "fece67b7.0fd7b8",
+        "name": "",
+        "func": "var user = flow.get('user',user)\nmsg.topic = \"SELECT * FROM TeleUsersTest WHERE id=\"+user\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 300,
+        "y": 500,
+        "wires": [
+            [
+                "7bc75688.10d5f8"
+            ]
+        ]
+    },
+    {
+        "id": "9c9d8516.c3cac8",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "DELETE",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "DELETE from TeleUsers",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 580,
+        "wires": [
+            [
+                "2d5094b7.c1f91c"
+            ]
+        ]
+    },
+    {
+        "id": "afb195fe.451118",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "SELECT",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM Loans",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 620,
+        "wires": [
+            [
+                "2d5094b7.c1f91c"
+            ]
+        ]
+    },
+    {
+        "id": "a236af90.85c92",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "SELECT LAST",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM Loans ORDER BY LoanID DESC LIMIT 1",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 360,
+        "wires": [
+            [
+                "7bc75688.10d5f8"
+            ]
+        ]
+    },
+    {
+        "id": "7bc75688.10d5f8",
+        "type": "sqlite",
+        "z": "fece67b7.0fd7b8",
+        "mydb": "2525d4df1782b878",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Members",
+        "x": 600,
+        "y": 260,
+        "wires": [
+            [
+                "22add297.10664e"
+            ]
+        ]
+    },
+    {
+        "id": "2d5094b7.c1f91c",
+        "type": "sqlite",
+        "z": "fece67b7.0fd7b8",
+        "mydb": "2525d4df1782b878",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Members",
+        "x": 580,
+        "y": 540,
+        "wires": [
+            [
+                "22add297.10664e"
+            ]
+        ]
+    },
+    {
+        "id": "2525d4df1782b878",
+        "type": "sqlitedb",
+        "db": "Members",
+        "mode": "RWC"
+    }
+]"tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "1e778388.7c3d8c",
+        "type": "function",
+        "z": "fece67b7.0fd7b8",
+        "name": "topic=id",
+        "func": "var user = msg.originalMessage.from.id;\nflow.set('user',user)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 520,
+        "y": 1080,
+        "wires": [
+            [
+                "e80ce3f5.17799"
+            ]
+        ]
+    },
+    {
+        "id": "2cbfca3.4b4ed36",
+        "type": "function",
+        "z": "fece67b7.0fd7b8",
+        "name": "public key",
+        "func": "var user = flow.get('user',user)\nmsg.payload = {\n    chatId: user,\n    type: 'message',\n    content: 'Public Key: '+msg.payload[0].public\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1080,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f2a047dc.45ccf8",
+        "type": "function",
+        "z": "fece67b7.0fd7b8",
+        "name": "link",
+        "func": "var user = flow.get('user',user)\nmsg.payload = {\n    chatId: user,\n    type: 'message',\n    content: \"https://stellar.expert/explorer/testnet/account/\"+msg.payload[0].public\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1330,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "35dded8c.368002",
+        "type": "debug",
+        "z": "fece67b7.0fd7b8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1250,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "f74c5d34.b259d",
+        "type": "switch",
+        "z": "fece67b7.0fd7b8",
+        "name": "get json",
+        "property": "payload[0].id",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "user",
+                "vt": "flow"
+            },
+            {
+                "t": "null"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 880,
+        "y": 1140,
+        "wires": [
+            [
+                "31a5e73d.27cba8",
+                "2cbfca3.4b4ed36",
+                "ba02c5b1.3e7428"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "31a5e73d.27cba8",
+        "type": "function",
+        "z": "fece67b7.0fd7b8",
+        "name": "topic=public payload=private",
+        "func": "msg.payload=msg.payload[0].private\n//msg.topic=msg.payload[0].public\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1000,
+        "y": 1280,
+        "wires": [
+            [
+                "3c8c8039.8fa53",
+                "ab21.6fa774df9",
+                "35dded8c.368002"
+            ]
+        ]
+    },
+    {
+        "id": "e80ce3f5.17799",
+        "type": "function",
+        "z": "fece67b7.0fd7b8",
+        "name": "check for secret",
+        "func": "var user = msg.originalMessage.from.id;\nmsg.payload.chatId = user;\nflow.set('user',user);\n\nmsg.topic = \"SELECT * FROM TeleUsers WHERE id=\"+user\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 640,
+        "y": 1140,
+        "wires": [
+            [
+                "58c55540.18745c"
+            ]
+        ]
+    },
+    {
+        "id": "8a722c26.372bb",
+        "type": "function",
+        "z": "fece67b7.0fd7b8",
+        "name": "create and testfund keypair \\n payload=secret topic=public",
+        "func": "const fetch = global.get(\"nodefetch\");\n\nvar StellarSdk = global.get(\"stellarsdk\");\n// create a completely new and unique pair of keys\n// see more about KeyPair objects: https://stellar.github.io/js-stellar-sdk/Keypair.html\nconst pair = StellarSdk.Keypair.random();\n\n//console.log(pair.secret());\n//msg.payload = \"Pair secret: \" + pair.secret()\n//node.send(msg)\n// SAV76USXIJOBMEQXPANUOQM6F5LIOTLPDIDVRJBFFE2MDJXG24TAPUU7\n//console.log(pair.publicKey());\n//msg.payload = \"Pair publickey: \" + pair.publicKey()\n//node.send(msg)\n// GCFXHS4GXL6BVUCXBWXGTITROWLVYXQKQLF4YH5O5JT3YZXCYPAFBJZB\nasync function main() {\n  try {\n    const response = await fetch(\n      `https://friendbot.stellar.org?addr=${encodeURIComponent(\n        pair.publicKey(),\n      )}`,\n    );\n    const responseJSON = await response.json();\n    console.log(\"SUCCESS! You have a new account :)\\n\", responseJSON);\n  } catch (e) {\n    console.log(\"ERROR!\", e);\n  }\n\n\n}\nmain()\nvar user = msg.originalMessage.from.id;\nflow.set('user',user);\nmsg.payload=pair.secret();\n\nmsg.topic=pair.publicKey();\n//msg.payload.chatId=user;\n\nmsg.id= msg.originalMessage.from.id;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 360,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ba02c5b1.3e7428",
+        "type": "delay",
+        "z": "fece67b7.0fd7b8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": ".25",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "outputs": 1,
+        "x": 1200,
+        "y": 920,
+        "wires": [
+            [
+                "f2a047dc.45ccf8"
+            ]
+        ]
+    },
+    {
+        "id": "a236af90.85c92",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "SELECT LAST",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM Loans ORDER BY LoanID DESC LIMIT 1",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 360,
+        "wires": [
+            [
+                "7bc75688.10d5f8"
+            ]
+        ]
+    },
+    {
+        "id": "7efaaee4.fb523",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "CREATE",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "CREATE TABLE Active(loanID INTEGER, NFT TEXT, Issuer TEXT, Amount NUMERIC, Fee NUMERIC, Time NUMERIC, Secret TEXT, Lender TEXT)",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1020,
+        "y": 160,
+        "wires": [
+            [
+                "1588ee1f.fbd722"
+            ]
+        ]
+    },
+    {
+        "id": "f28531a6.9675a",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "SELECT COUNT",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT COUNT(*) FROM Active",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1020,
+        "y": 340,
+        "wires": [
+            [
+                "1588ee1f.fbd722"
+            ]
+        ]
+    },
+    {
+        "id": "cee80a9d.4bccb8",
+        "type": "debug",
+        "z": "fece67b7.0fd7b8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1450,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "bf1ffe94.34d69",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "SELECT",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM Active",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1020,
+        "y": 260,
+        "wires": [
+            [
+                "1588ee1f.fbd722"
+            ]
+        ]
+    },
+    {
+        "id": "79861688.8ff158",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 990,
+        "y": 600,
+        "wires": [
+            [
+                "383c3db0.520832"
+            ]
+        ]
+    },
+    {
+        "id": "383c3db0.520832",
+        "type": "debug",
+        "z": "fece67b7.0fd7b8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "f1371f7e.b6482",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "DROP",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "DROP TABLE Active",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1030,
+        "y": 400,
+        "wires": [
+            [
+                "1588ee1f.fbd722"
+            ]
+        ]
+    },
+    {
+        "id": "c4ad67c7.4d8168",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "DELETE",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "DELETE from Active",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1020,
+        "y": 200,
+        "wires": [
+            [
+                "1588ee1f.fbd722"
+            ]
+        ]
+    },
+    {
+        "id": "7bc75688.10d5f8",
+        "type": "sqlite",
+        "z": "fece67b7.0fd7b8",
+        "mydb": "8d0cc115.8c108",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Loans",
+        "x": 590,
+        "y": 260,
+        "wires": [
+            [
+                "22add297.10664e"
+            ]
+        ]
+    },
+    {
+        "id": "2d5094b7.c1f91c",
+        "type": "sqlite",
+        "z": "fece67b7.0fd7b8",
+        "mydb": "8d0cc115.8c108",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Loans",
+        "x": 570,
+        "y": 540,
+        "wires": [
+            [
+                "22add297.10664e"
+            ]
+        ]
+    },
+    {
+        "id": "58c55540.18745c",
+        "type": "sqlite",
+        "z": "fece67b7.0fd7b8",
+        "mydb": "29235876.a28e58",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "TelegramUsers",
+        "x": 740,
+        "y": 1220,
+        "wires": [
+            [
+                "f74c5d34.b259d"
+            ]
+        ]
+    },
+    {
+        "id": "1588ee1f.fbd722",
+        "type": "sqlite",
+        "z": "fece67b7.0fd7b8",
+        "mydb": "5f22398b.204d58",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Active",
+        "x": 1290,
+        "y": 220,
+        "wires": [
+            [
+                "cee80a9d.4bccb8"
+            ]
+        ]
+    }
+]
