@@ -1,0 +1,5951 @@
+[
+    {
+        "id": "371740748292f1c0",
+        "type": "tab",
+        "label": "SNNAC",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e1a3be1e.3571d",
+        "type": "tab",
+        "label": "Testnet Wallet",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "c24acee5.55115",
+        "type": "tab",
+        "label": "NFT Multimaker ERC721",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "fece67b7.0fd7b8",
+        "type": "tab",
+        "label": "DB",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "134203a1625ebddf",
+        "type": "tab",
+        "label": "MQTT",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "07dd62fea7f5774f",
+        "type": "tab",
+        "label": "NFT TOML Generator",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "cbfade9f6abdb499",
+        "type": "ui_tab",
+        "name": "SNNAC",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8aa36cc8e51651d6",
+        "type": "ui_group",
+        "name": "SNNAC",
+        "tab": "cbfade9f6abdb499",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6ecd422d1a07f3fc",
+        "type": "ui_spacer",
+        "z": "371740748292f1c0",
+        "name": "spacer",
+        "group": "45c07281d730ef69",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ac996fd1dbf780d8",
+        "type": "ui_spacer",
+        "z": "371740748292f1c0",
+        "name": "spacer",
+        "group": "e02b4cf762e6ed64",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2949dee17ad58728",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "1f563092.450a6f",
+        "type": "ui_group",
+        "name": "Check Balances",
+        "tab": "ddc63819.638318",
+        "order": 1,
+        "disp": true,
+        "width": "7",
+        "collapse": false
+    },
+    {
+        "id": "c3c52113.338a9",
+        "type": "ui_group",
+        "name": "Send Transaction",
+        "tab": "ddc63819.638318",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "ad15b2e3.60848",
+        "type": "ui_group",
+        "name": "Make Offer",
+        "tab": "ddc63819.638318",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a947341d.96f6c8",
+        "type": "ui_group",
+        "name": "Generate New Keypair",
+        "tab": "eaad2b20.f0cd48",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "60973256.20713c",
+        "type": "ui_group",
+        "name": "NFT ERC721",
+        "tab": "73449d79.7a6494",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ddc63819.638318",
+        "type": "ui_tab",
+        "name": "Testnet Wallet",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "eaad2b20.f0cd48",
+        "type": "ui_tab",
+        "name": "Account Generator",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "73449d79.7a6494",
+        "type": "ui_tab",
+        "name": "NFT Generator",
+        "icon": "dashboard",
+        "order": 12,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e02b4cf762e6ed64",
+        "type": "ui_group",
+        "name": "NFT Balance Checker",
+        "tab": "cbfade9f6abdb499",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "45c07281d730ef69",
+        "type": "ui_group",
+        "name": "Result",
+        "tab": "cbfade9f6abdb499",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6a727574ff0f6131",
+        "type": "ui_spacer",
+        "z": "371740748292f1c0",
+        "name": "spacer",
+        "group": "8aa36cc8e51651d6",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "17ba6d19dc1d2e56",
+        "type": "ui_group",
+        "name": "Initialize NFC",
+        "tab": "cbfade9f6abdb499",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f0fae40520ede199",
+        "type": "ui_spacer",
+        "z": "371740748292f1c0",
+        "name": "spacer",
+        "group": "45c07281d730ef69",
+        "order": 3,
+        "width": "2",
+        "height": "2"
+    },
+    {
+        "id": "710642d973309351",
+        "type": "ui_spacer",
+        "z": "371740748292f1c0",
+        "name": "spacer",
+        "group": "45c07281d730ef69",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2525d4df1782b878",
+        "type": "sqlitedb",
+        "db": "Members",
+        "mode": "RWC"
+    },
+    {
+        "id": "f642514e534b97aa",
+        "type": "ui_group",
+        "name": "Account",
+        "tab": "73449d79.7a6494",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9b2d30969434d362",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "652e158eea84418a",
+        "type": "ui_spacer",
+        "z": "371740748292f1c0",
+        "name": "spacer",
+        "group": "17ba6d19dc1d2e56",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "cac7b4e38c0c2177",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Stellar UI",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 2
+            }
+        }
+    },
+    {
+        "id": "c36016604a2f5e77",
+        "type": "ui_tab",
+        "name": "NFT TOML Generator",
+        "icon": "dashboard",
+        "order": 8,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bdc3fa5511cdc1e8",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "c36016604a2f5e77",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "9a269eae5b579a02",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "c36016604a2f5e77",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "8fa2021645f5915c",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "nftiss",
+        "func": "var nftiss = msg.payload\nflow.set('nftiss',nftiss);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 490,
+        "y": 520,
+        "wires": [
+            [
+                "b234e559a2978913",
+                "1ff0e71cd2d1f4d1"
+            ]
+        ]
+    },
+    {
+        "id": "33ba0f782aa8e263",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "nftname",
+        "func": "var nftname = msg.payload\nflow.set('nftname',nftname);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 500,
+        "y": 600,
+        "wires": [
+            [
+                "b234e559a2978913",
+                "1ff0e71cd2d1f4d1"
+            ]
+        ]
+    },
+    {
+        "id": "55f9a08003d7a000",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "network",
+        "func": "var network = msg.payload\nflow.set('network',network);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is deployed.\nvar network = \"test\"\nflow.set('network',network);",
+        "finalize": "",
+        "x": 500,
+        "y": 680,
+        "wires": [
+            [
+                "b234e559a2978913",
+                "1ff0e71cd2d1f4d1"
+            ]
+        ]
+    },
+    {
+        "id": "4708f44a1918185b",
+        "type": "switch",
+        "z": "371740748292f1c0",
+        "name": "Network Warning",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "test",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "public",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 350,
+        "y": 740,
+        "wires": [
+            [],
+            [
+                "86b7f2c30abdb3b5"
+            ]
+        ]
+    },
+    {
+        "id": "86b7f2c30abdb3b5",
+        "type": "change",
+        "z": "371740748292f1c0",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "This is highly experimental. You probably shouldn't use this on public. Your secret key will not be secure in this environment, please use the XDR in a signer. Do not input a secret key from an account you care about.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 740,
+        "wires": [
+            [
+                "44d9711ddd308977"
+            ]
+        ]
+    },
+    {
+        "id": "5f56bec27facfb74",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "buyer",
+        "func": "var buyer = msg.payload\nflow.set('buyer',buyer);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 120,
+        "wires": [
+            [
+                "1dc19f74c4d2dd89"
+            ]
+        ]
+    },
+    {
+        "id": "0497ce92ea46826e",
+        "type": "comment",
+        "z": "371740748292f1c0",
+        "name": "CHECK NFT BALANCE",
+        "info": "",
+        "x": 500,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "1dc19f74c4d2dd89",
+        "type": "http request",
+        "z": "371740748292f1c0",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://horizon.stellar.org/accounts/GAYOLLLUIZE4DZMBB2ZBKGBUBZLIOYU6XFLW37GBP2VZD3ABNXCW4BVA",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 650,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "176dc770a4f9468c",
+        "type": "http request",
+        "z": "371740748292f1c0",
+        "name": "http request account",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://horizon-testnet.stellar.org/accounts/{{{public}}}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1360,
+        "y": 460,
+        "wires": [
+            [
+                "e6bcdc618d48b4aa",
+                "92fd7bfaae259e0b"
+            ]
+        ]
+    },
+    {
+        "id": "e6bcdc618d48b4aa",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1430,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "5653cae36090413c",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "set payloads",
+        "func": "var public2 = flow.get('public2', public2)\nvar nftname = flow.get('nftname', nftname)\nvar nftiss = flow.get('nftiss', nftiss)\n\nmsg.public=public2\nmsg.nftname = nftname\nmsg.nftiss = nftiss\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 440,
+        "wires": [
+            [
+                "176dc770a4f9468c",
+                "41420dd2d5f5de9e"
+            ]
+        ]
+    },
+    {
+        "id": "41420dd2d5f5de9e",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1270,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "a98cdf8611361bf9",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "Check Balances",
+        "func": "const fetch = global.get(\"nodefetch\");\n\nvar StellarSdk = global.get(\"stellarsdk\");\n// create a completely new and unique pair of keys\n// see more about KeyPair objects: https://stellar.github.io/js-stellar-sdk/Keypair.html\nconst key = msg.payload;\n\n\nconst server = new StellarSdk.Server(\"https://horizon-testnet.stellar.org\");\n// the JS SDK uses promises for most actions, such as retrieving an account\nconst account = await server.loadAccount(key);\n//console.log(\"Balances for account: \" + pair.publicKey());\nmsg.topic = \"Balances for account: \" + key\n\nvar bals = \"\";\n\naccount.balances.forEach(function (balance) {\n  console.log(\"Type:\", balance.asset_type, \", Balance:\", balance.balance);\n  msg.payload = \"Type: \"+ balance.asset_code+\", Balance: \"+balance.balance+\" \\n \"\n  //node.send(msg)\n  bals = bals +\" \"+ msg.payload\n});\n\nmsg.payload = bals\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 180,
+        "wires": [
+            [
+                "12983259244d19a0",
+                "fbfb337acc331862"
+            ]
+        ]
+    },
+    {
+        "id": "53b960e2d0f718d5",
+        "type": "comment",
+        "z": "371740748292f1c0",
+        "name": "NFC SCANNED",
+        "info": "",
+        "x": 300,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "241c745c438004a0",
+        "type": "ui_dropdown",
+        "z": "371740748292f1c0",
+        "name": "",
+        "label": "Network",
+        "tooltip": "",
+        "place": "Test",
+        "group": "8aa36cc8e51651d6",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Test",
+                "value": "test",
+                "type": "str"
+            },
+            {
+                "label": "Public",
+                "value": "public",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 240,
+        "y": 680,
+        "wires": [
+            [
+                "55f9a08003d7a000",
+                "4708f44a1918185b"
+            ]
+        ]
+    },
+    {
+        "id": "7f70e081f2c4d343",
+        "type": "ui_text_input",
+        "z": "371740748292f1c0",
+        "name": "NFT - Name",
+        "label": "NFT - Name",
+        "tooltip": "",
+        "group": "e02b4cf762e6ed64",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 250,
+        "y": 600,
+        "wires": [
+            [
+                "33ba0f782aa8e263"
+            ]
+        ]
+    },
+    {
+        "id": "4824c08950367102",
+        "type": "ui_text_input",
+        "z": "371740748292f1c0",
+        "name": "NFT Issuer",
+        "label": "NFT Issuer",
+        "tooltip": "",
+        "group": "e02b4cf762e6ed64",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 250,
+        "y": 520,
+        "wires": [
+            [
+                "8fa2021645f5915c"
+            ]
+        ]
+    },
+    {
+        "id": "c5f6cbc7bcb88217",
+        "type": "ui_text_input",
+        "z": "371740748292f1c0",
+        "name": "Public Key2",
+        "label": "Public Key2",
+        "tooltip": "",
+        "group": "e02b4cf762e6ed64",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 250,
+        "y": 460,
+        "wires": [
+            [
+                "519319e5ead52edf"
+            ]
+        ]
+    },
+    {
+        "id": "05864ee1131990b1",
+        "type": "ui_text_input",
+        "z": "371740748292f1c0",
+        "name": "Public Key",
+        "label": "Public Key",
+        "tooltip": "",
+        "group": "8aa36cc8e51651d6",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "a98cdf8611361bf9"
+            ]
+        ]
+    },
+    {
+        "id": "fbfb337acc331862",
+        "type": "ui_text",
+        "z": "371740748292f1c0",
+        "group": "8aa36cc8e51651d6",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "balances result",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 860,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "12983259244d19a0",
+        "type": "ui_text",
+        "z": "371740748292f1c0",
+        "group": "8aa36cc8e51651d6",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Balances header",
+        "label": "",
+        "format": "{{msg.topic}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 870,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "320a63c8fcfe6481",
+        "type": "ui_text",
+        "z": "371740748292f1c0",
+        "group": "45c07281d730ef69",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "balances result",
+        "label": "",
+        "format": "{{msg.balance}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1910,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "d9dd78ce93647ebf",
+        "type": "ui_text",
+        "z": "371740748292f1c0",
+        "group": "45c07281d730ef69",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Balances header",
+        "label": "",
+        "format": "{{msg.topic}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1170,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "44d9711ddd308977",
+        "type": "ui_toast",
+        "z": "371740748292f1c0",
+        "position": "top right",
+        "displayTime": "60",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "",
+        "x": 740,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "905857b1e6f5e93e",
+        "type": "comment",
+        "z": "371740748292f1c0",
+        "name": "CHECK BALANCES",
+        "info": "",
+        "x": 470,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "044d12cdee4bdfbf",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "Check Balances",
+        "func": "const fetch = global.get(\"nodefetch\");\n\nvar StellarSdk = global.get(\"stellarsdk\");\n// create a completely new and unique pair of keys\n// see more about KeyPair objects: https://stellar.github.io/js-stellar-sdk/Keypair.html\nconst key = msg.payload;\n\n\nconst server = new StellarSdk.Server(\"https://horizon-testnet.stellar.org\");\n// the JS SDK uses promises for most actions, such as retrieving an account\nconst account = await server.loadAccount(key);\n//console.log(\"Balances for account: \" + pair.publicKey());\nmsg.topic = \"Balances for account: \" + key\n\nvar bals = \"\";\n\naccount.balances.forEach(function (balance) {\n  console.log(\"Type:\", balance.asset_type, \", Balance:\", balance.balance);\n  msg.payload = \"Type: \"+ balance.asset_code+\", Balance: \"+balance.balance+\" \\n \"\n  //node.send(msg)\n  bals = bals +\" \"+ msg.payload\n});\n\nmsg.payload = bals\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1130,
+        "y": 520,
+        "wires": [
+            [
+                "176dc770a4f9468c"
+            ]
+        ]
+    },
+    {
+        "id": "ead4202627e7e605",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1860,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "92fd7bfaae259e0b",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "get NFT balance",
+        "func": "var public2 = flow.get('public2', public2)\nvar nftname = flow.get('nftname', nftname)\nvar nftiss = msg.nftiss\n\nmsg.balance=0\n\n//check balance of specific nft\nmsg.payload.balances.forEach(function (balance) {\n    msg.assets+=1\n    if(balance.asset_code==nftname && balance.asset_issuer==nftiss){\n    var nftbal=balance.balance*10000000\n    msg.balance=\"Balance: \"+nftbal\n    }\n    \n});\n\n//msg.balance=msg.payload.balances[0]\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1690,
+        "y": 460,
+        "wires": [
+            [
+                "ead4202627e7e605",
+                "320a63c8fcfe6481"
+            ]
+        ]
+    },
+    {
+        "id": "b234e559a2978913",
+        "type": "switch",
+        "z": "371740748292f1c0",
+        "name": "Network Switch",
+        "property": "network",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "test",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "public",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 800,
+        "y": 400,
+        "wires": [
+            [
+                "5653cae36090413c"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "519319e5ead52edf",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "public2",
+        "func": "var public2 = msg.payload\nflow.set('public2', public2);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 460,
+        "wires": [
+            [
+                "b234e559a2978913",
+                "1ff0e71cd2d1f4d1"
+            ]
+        ]
+    },
+    {
+        "id": "1ff0e71cd2d1f4d1",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "format output",
+        "func": "var public2 = flow.get('public2', public2)\nvar nftname = flow.get('nftname', nftname)\nvar nftiss = flow.get('nftiss', nftiss)\nvar network = flow.get('network', network)\n\nmsg.public=public2\nmsg.nftname = nftname\nmsg.nftiss = nftiss\nmsg.network = network\n\nmsg.balance=\"Submitting to Stellar\"\n\nmsg.topic = \"Public Key:\\n\" + public2 + \"\\nNFT:<br>\" + nftname + \"\\n\" + \"<br>Issuer: \\n \" + nftiss +\"<br>Network: \"+network+\"\\n\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 480,
+        "wires": [
+            [
+                "d9dd78ce93647ebf",
+                "320a63c8fcfe6481"
+            ]
+        ]
+    },
+    {
+        "id": "53bf767a4dc4c5de",
+        "type": "ui_text_input",
+        "z": "371740748292f1c0",
+        "name": "Public Key3",
+        "label": "Public Key3",
+        "tooltip": "",
+        "group": "17ba6d19dc1d2e56",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 328.57142639160156,
+        "y": 1184.28564453125,
+        "wires": [
+            [
+                "5de7e4855e9bba4d"
+            ]
+        ]
+    },
+    {
+        "id": "5de7e4855e9bba4d",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "public3",
+        "func": "var public3 = msg.payload\nflow.set('public3', public3);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 538.5714263916016,
+        "y": 1184.28564453125,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7ef1329e5a8a48ca",
+        "type": "ui_text",
+        "z": "371740748292f1c0",
+        "group": "17ba6d19dc1d2e56",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "NFC ID",
+        "label": "NFC ID",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1440,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "33e33601e7def70a",
+        "type": "ui_button",
+        "z": "371740748292f1c0",
+        "name": "Link NFC ID and Public Key",
+        "group": "17ba6d19dc1d2e56",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Link NFC ID and Public Key",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "04 BF E9 12 72 6E 80",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 260,
+        "y": 1640,
+        "wires": [
+            [
+                "33fdd712fb96c225",
+                "92f90822c8e0c533",
+                "bf552c0c35108793"
+            ]
+        ]
+    },
+    {
+        "id": "5d14aa2e6a5a46f6",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "33fdd712fb96c225",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "add member",
+        "func": "var public3 = flow.get('public3', public3);\nvar member = flow.get('member', member);\nvar NFC = flow.get('NFC', NFC);\nvar name = flow.get('name', name);\n\nmsg.topic = \"INSERT INTO Members(member, NFC, Name, PublicKey) values(\" + member + \", \" + '\"' + NFC + '\", ' + '\"' + name + '\", ' + '\"' + public3+'\")'\nmember=member+1\nflow.set('member', member);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is deployed.\nvar member = 0;\nflow.set('member',member);",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 1620,
+        "wires": [
+            [
+                "39041edad5bd30fc",
+                "5d14aa2e6a5a46f6"
+            ]
+        ]
+    },
+    {
+        "id": "39041edad5bd30fc",
+        "type": "sqlite",
+        "z": "371740748292f1c0",
+        "mydb": "2525d4df1782b878",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Members",
+        "x": 760,
+        "y": 1620,
+        "wires": [
+            [
+                "44629359eaf3338f"
+            ]
+        ]
+    },
+    {
+        "id": "92f90822c8e0c533",
+        "type": "change",
+        "z": "371740748292f1c0",
+        "name": "Status Update",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": " ",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 1700,
+        "wires": [
+            [
+                "7ef1329e5a8a48ca"
+            ]
+        ]
+    },
+    {
+        "id": "bf552c0c35108793",
+        "type": "delay",
+        "z": "371740748292f1c0",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.25",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "outputs": 1,
+        "x": 530,
+        "y": 1740,
+        "wires": [
+            [
+                "7784c5d610993bcd"
+            ]
+        ]
+    },
+    {
+        "id": "44629359eaf3338f",
+        "type": "delay",
+        "z": "371740748292f1c0",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": ".5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "outputs": 1,
+        "x": 900,
+        "y": 1620,
+        "wires": [
+            [
+                "28032fbcc96b308f"
+            ]
+        ]
+    },
+    {
+        "id": "7784c5d610993bcd",
+        "type": "change",
+        "z": "371740748292f1c0",
+        "name": "Status Update",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Adding...",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 1740,
+        "wires": [
+            [
+                "7ef1329e5a8a48ca"
+            ]
+        ]
+    },
+    {
+        "id": "28032fbcc96b308f",
+        "type": "change",
+        "z": "371740748292f1c0",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Success",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1080,
+        "y": 1620,
+        "wires": [
+            [
+                "7ef1329e5a8a48ca"
+            ]
+        ]
+    },
+    {
+        "id": "94329b295cee041b",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "6a9baac9a60ab59d",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "4c99d8f8eac7a2ea",
+        "type": "inject",
+        "z": "371740748292f1c0",
+        "name": "SELECT LAST",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM Loans ORDER BY LoanID DESC LIMIT 1",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 1380,
+        "wires": [
+            [
+                "1623d00dd7665700"
+            ]
+        ]
+    },
+    {
+        "id": "f75edb68501063ae",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "set MemberID",
+        "func": "var member = msg.payload[0].Member+1\nflow.set('member', member)\nmsg.payload = msg.payload[0]\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 1460,
+        "wires": [
+            [
+                "94329b295cee041b"
+            ]
+        ]
+    },
+    {
+        "id": "766aa87fc1ac0116",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 390,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "5a136996c94689f2",
+        "type": "sqlite",
+        "z": "371740748292f1c0",
+        "mydb": "2525d4df1782b878",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Members",
+        "x": 440,
+        "y": 1460,
+        "wires": [
+            [
+                "f75edb68501063ae",
+                "6a9baac9a60ab59d"
+            ]
+        ]
+    },
+    {
+        "id": "11a9f24f86e6560b",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "NFC",
+        "func": "//var NFC = msg.payload\nvar NFC = msg.payload.tag.uid\nflow.set('NFC', NFC);\nmsg.payload = msg.payload.tag.uid\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 528.5714263916016,
+        "y": 1144.28564453125,
+        "wires": [
+            [
+                "7ef1329e5a8a48ca",
+                "a0bb1d6e8059824a"
+            ]
+        ]
+    },
+    {
+        "id": "62f0cd6d5c1f5d2e",
+        "type": "inject",
+        "z": "371740748292f1c0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 348.57142639160156,
+        "y": 1144.28564453125,
+        "wires": [
+            [
+                "11a9f24f86e6560b"
+            ]
+        ]
+    },
+    {
+        "id": "e78783d064dc0f6d",
+        "type": "ui_text_input",
+        "z": "371740748292f1c0",
+        "name": "Name",
+        "label": "Name",
+        "tooltip": "",
+        "group": "17ba6d19dc1d2e56",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 308.57142639160156,
+        "y": 1224.28564453125,
+        "wires": [
+            [
+                "c5da696b97f93178"
+            ]
+        ]
+    },
+    {
+        "id": "c5da696b97f93178",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "name",
+        "func": "var name = msg.payload\nflow.set('name', name);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 528.5714263916016,
+        "y": 1224.28564453125,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "966b2cc7ae6a4e25",
+        "type": "comment",
+        "z": "371740748292f1c0",
+        "name": "SETUP NEW MEMBER",
+        "info": "",
+        "x": 280,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "9223a653f66dc7c3",
+        "type": "mqtt in",
+        "z": "371740748292f1c0",
+        "name": "",
+        "topic": "d/e32_006/nfc_001",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9b2d30969434d362",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 290,
+        "y": 1060,
+        "wires": [
+            [
+                "fc1e9469dd6b997b"
+            ]
+        ]
+    },
+    {
+        "id": "8716d340cbe0f923",
+        "type": "inject",
+        "z": "371740748292f1c0",
+        "name": "1667314085236",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1667314085236",
+        "payloadType": "str",
+        "x": 180,
+        "y": 1100,
+        "wires": [
+            [
+                "11a9f24f86e6560b"
+            ]
+        ]
+    },
+    {
+        "id": "6065cf4fd4ef0e91",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "2da4a323547f8afc",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "0c7cd0574455be59",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "set payloads",
+        "func": "var nftiss = flow.get('nftiss', nftiss)\n\nmsg.name=msg.payload[0].Name\nmsg.nftname=\"DBNFT0\"+msg.payload[0].Member\nmsg.public = msg.payload[0].PublicKey\nmsg.nftiss = nftiss\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 1340,
+        "wires": [
+            [
+                "6065cf4fd4ef0e91",
+                "61beef89a27cf4e6"
+            ]
+        ]
+    },
+    {
+        "id": "b0d2047c677fdea3",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "c21b9212b11102aa",
+        "type": "sqlite",
+        "z": "371740748292f1c0",
+        "mydb": "2525d4df1782b878",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Members",
+        "x": 560,
+        "y": 1340,
+        "wires": [
+            [
+                "0c7cd0574455be59",
+                "2da4a323547f8afc"
+            ]
+        ]
+    },
+    {
+        "id": "a0bb1d6e8059824a",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "Check NFC UID",
+        "func": "var NFC=flow.get('NFC',NFC)\nmsg.topic = \"SELECT * FROM Members WHERE NFC=\"+'\"'+NFC+'\"'\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 1300,
+        "wires": [
+            [
+                "b0d2047c677fdea3",
+                "c21b9212b11102aa"
+            ]
+        ]
+    },
+    {
+        "id": "1623d00dd7665700",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "retrieve member ID max",
+        "func": "//var id = flow.get('id',id);\n//msg.payload.chatId = user;\n//flow.set('user',user);\n//msg.payload=msg.topic\n//msg.payload=0\nmsg.topic = \"SELECT * FROM Members ORDER BY Member DESC LIMIT 1\"\nnode.send(msg)\n\n//return msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is deployed.\n//msg.topic = \"SELECT * FROM Loans ORDER BY LoanID DESC LIMIT 1\"\n//node.send(msg);",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 1460,
+        "wires": [
+            [
+                "5a136996c94689f2",
+                "766aa87fc1ac0116"
+            ]
+        ]
+    },
+    {
+        "id": "bfb0e527b1e8bc17",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1470,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "ca9aa771c6236b7d",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "get NFT balance",
+        "func": "//var public2 = flow.get('public2', public2)\nvar nftname = msg.nftname\nvar nftiss = msg.nftiss\n\nmsg.balance=0\n\n//check balance of specific nft\nmsg.payload.balances.forEach(function (balance) {\n    msg.assets+=1\n    if(balance.asset_code==nftname && balance.asset_issuer==nftiss){\n    var nftbal=balance.balance*10000000\n    msg.balance=\"Balance: \"+nftbal\n    }\n    \n});\n\nmsg.payload=\"Name: \"+msg.name+\"<br>NFT \"+msg.balance +\"<br> ACCESS GRANTED\"\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 1340,
+        "wires": [
+            [
+                "bfb0e527b1e8bc17",
+                "2dc3d8caba044a26"
+            ]
+        ]
+    },
+    {
+        "id": "61beef89a27cf4e6",
+        "type": "http request",
+        "z": "371740748292f1c0",
+        "name": "http request account",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://horizon-testnet.stellar.org/accounts/{{{public}}}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 970,
+        "y": 1340,
+        "wires": [
+            [
+                "ca9aa771c6236b7d",
+                "4d6324856f8ec81b"
+            ]
+        ]
+    },
+    {
+        "id": "4d6324856f8ec81b",
+        "type": "debug",
+        "z": "371740748292f1c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1150,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "4ac4ff743af47e80",
+        "type": "ui_text",
+        "z": "371740748292f1c0",
+        "group": "17ba6d19dc1d2e56",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "NFC Scan",
+        "label": "NFC Scan",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1450,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "fc1e9469dd6b997b",
+        "type": "switch",
+        "z": "371740748292f1c0",
+        "name": "not hello world",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "hello world",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 500,
+        "y": 1080,
+        "wires": [
+            [
+                "11a9f24f86e6560b",
+                "1ea202fe6eadd5b0"
+            ]
+        ]
+    },
+    {
+        "id": "2dc3d8caba044a26",
+        "type": "switch",
+        "z": "371740748292f1c0",
+        "name": "balance",
+        "property": "balance",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Balance: 1",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 1340,
+        "y": 1400,
+        "wires": [
+            [
+                "4ac4ff743af47e80"
+            ],
+            [
+                "03b9e04e907eeedf"
+            ]
+        ]
+    },
+    {
+        "id": "03b9e04e907eeedf",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "format fail",
+        "func": "msg.payload=\"NO NFT!\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 1500,
+        "wires": [
+            [
+                "4ac4ff743af47e80"
+            ]
+        ]
+    },
+    {
+        "id": "1ea202fe6eadd5b0",
+        "type": "function",
+        "z": "371740748292f1c0",
+        "name": "clear",
+        "func": "msg.payload=\"Scanning...\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 1420,
+        "wires": [
+            [
+                "4ac4ff743af47e80"
+            ]
+        ]
+    },
+    {
+        "id": "b89318e8.fe7498",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "Check Balances Example",
+        "func": "const fetch = global.get(\"nodefetch\");\n\nvar StellarSdk = global.get(\"stellarsdk\");\n// create a completely new and unique pair of keys\n// see more about KeyPair objects: https://stellar.github.io/js-stellar-sdk/Keypair.html\nconst pair = StellarSdk.Keypair.random();\n\n//console.log(pair.secret());\nmsg.payload = \"Pair secret: \" + pair.secret()\nnode.send(msg)\n// SAV76USXIJOBMEQXPANUOQM6F5LIOTLPDIDVRJBFFE2MDJXG24TAPUU7\n//console.log(pair.publicKey());\nmsg.payload = \"Pair publickey: \" + pair.publicKey()\nnode.send(msg)\n// GCFXHS4GXL6BVUCXBWXGTITROWLVYXQKQLF4YH5O5JT3YZXCYPAFBJZB\nasync function main() {\n  try {\n    const response = await fetch(\n      `https://friendbot.stellar.org?addr=${encodeURIComponent(\n        pair.publicKey(),\n      )}`,\n    );\n    const responseJSON = await response.json();\n    console.log(\"SUCCESS! You have a new account :)\\n\", responseJSON);\n  } catch (e) {\n    console.log(\"ERROR!\", e);\n  }\n\nconst server = new StellarSdk.Server(\"https://horizon-testnet.stellar.org\");\n// the JS SDK uses promises for most actions, such as retrieving an account\nconst account = await server.loadAccount(pair.publicKey());\n//console.log(\"Balances for account: \" + pair.publicKey());\nmsg.payload = \"Balances for account: \" + pair.publicKey()\nnode.send(msg)\naccount.balances.forEach(function (balance) {\n  //console.log(\"Type:\", balance.asset_type, \", Balance:\", balance.balance);\n  msg.payload = \"Type:\"+ balance.asset_type+\", Balance:\"+balance.balance\n  node.send(msg)\n});\n\n}\nmain()",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 530,
+        "y": 340,
+        "wires": [
+            [
+                "af22515e.f86d9",
+                "da4a3f54.f4e15"
+            ]
+        ]
+    },
+    {
+        "id": "b8e28e57.e51c9",
+        "type": "inject",
+        "z": "e1a3be1e.3571d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload",
+                "v": "",
+                "vt": "date"
+            },
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "string"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 290,
+        "y": 340,
+        "wires": [
+            [
+                "b89318e8.fe7498"
+            ]
+        ]
+    },
+    {
+        "id": "af22515e.f86d9",
+        "type": "debug",
+        "z": "e1a3be1e.3571d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 820,
+        "y": 344,
+        "wires": []
+    },
+    {
+        "id": "3a89629.ccdd39e",
+        "type": "comment",
+        "z": "e1a3be1e.3571d",
+        "name": "Getting Acount data",
+        "info": "we are getting below data in this node\n1. Pair secret\n2. Pair publickey\n3. Acount ID\n4. Type and Balance\n",
+        "x": 510,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "a3c0ca1e.f0f588",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "Submit Transaction Example",
+        "func": "var StellarSdk = global.get(\"stellarsdk\");\nvar server = new StellarSdk.Server(\"https://horizon-testnet.stellar.org\");\nvar sourceKeys = StellarSdk.Keypair.fromSecret(\n  msg.payload.sourceKeys,\n);\nvar destinationId = msg.payload.destinationId;\n// Transaction will hold a built transaction we can resubmit if the result is unknown.\nvar transaction;\n\n// First, check to make sure that the destination account exists.\n// You could skip this, but if the account does not exist, you will be charged\n// the transaction fee when the transaction fails.\nserver\n  .loadAccount(destinationId)\n  // If the account is not found, surface a nicer error message for logging.\n  .catch(function (error) {\n    if (error instanceof StellarSdk.NotFoundError) {\n      throw new Error(\"The destination account does not exist!\");\n    } else return error;\n  })\n  // If there was no error, load up-to-date information on your account.\n  .then(function () {\n    return server.loadAccount(sourceKeys.publicKey());\n  })\n  .then(function (sourceAccount) {\n    // Start building the transaction.\n    transaction = new StellarSdk.TransactionBuilder(sourceAccount, {\n      fee: StellarSdk.BASE_FEE,\n      networkPassphrase: StellarSdk.Networks.TESTNET,\n    })\n      .addOperation(\n        StellarSdk.Operation.payment({\n          destination: destinationId,\n          // Because Stellar allows transaction in many currencies, you must\n          // specify the asset type. The special \"native\" asset represents Lumens.\n          asset: StellarSdk.Asset.native(),\n          amount: \"10\",\n        }),\n      )\n      // A memo allows you to add your own metadata to a transaction. It's\n      // optional and does not affect how Stellar treats the transaction.\n      .addMemo(StellarSdk.Memo.text(\"Test Transaction\"))\n      // Wait a maximum of three minutes for the transaction\n      .setTimeout(180)\n      .build();\n    // Sign the transaction to prove you are actually the person sending it.\n    transaction.sign(sourceKeys);\n    // And finally, send it off to Stellar!\n    return server.submitTransaction(transaction);\n  })\n  .then(function (result) {\n    //console.log(\"Success! Results:\", result);\n    msg.payload=result;\n    node.send(msg);\n  })\n  .catch(function (error) {\n    console.error(\"Something went wrong!\", error);\n    // If the result is unknown (no response body, timeout etc.) we simply resubmit\n    // already built transaction:\n    // server.submitTransaction(transaction);\n  });",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 540,
+        "y": 640,
+        "wires": [
+            [
+                "22e0c241.59bd6e"
+            ]
+        ]
+    },
+    {
+        "id": "a11e4603.4b7608",
+        "type": "inject",
+        "z": "e1a3be1e.3571d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"sourceKeys\":\"SBSZQMYX2EAT6MGDOAJ3OONFHT6TVVWLLAZEESRIQ7G3CYLHTCWTC3UX\",\"destinationId\":\"GD5LYKVQZYHDNJ3QTEDX3EBF5XK3W5NADGTBT5KLD276OPP7YKDIQIBZ\"}",
+        "payloadType": "json",
+        "x": 290,
+        "y": 640,
+        "wires": [
+            [
+                "a3c0ca1e.f0f588"
+            ]
+        ]
+    },
+    {
+        "id": "22e0c241.59bd6e",
+        "type": "debug",
+        "z": "e1a3be1e.3571d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 870,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "4dadf59d.58b25c",
+        "type": "comment",
+        "z": "e1a3be1e.3571d",
+        "name": "Transactions",
+        "info": "",
+        "x": 490,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "bd5ddba4.6459b8",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "Create Sell Offer Example",
+        "func": "var StellarSdk = global.get(\"stellarsdk\");\nvar server = new StellarSdk.Server(\"https://horizon-testnet.stellar.org\");\n\nvar sourceKeys = StellarSdk.Keypair.fromSecret(\n  msg.payload.secretKey,\n);\nvar destinationId = msg.payload.sourceAccount;\n// Transaction will hold a built transaction we can resubmit if the result is unknown.\nvar transaction;\n\n// First, check to make sure that the destination account exists.\n// You could skip this, but if the account does not exist, you will be charged\n// the transaction fee when the transaction fails.\nserver\n  .loadAccount(destinationId)\n  // If the account is not found, surface a nicer error message for logging.\n  .catch(function (error) {\n    if (error instanceof StellarSdk.NotFoundError) {\n      throw new Error(\"The destination account does not exist!\");\n    } else return error;\n  })\n  // If there was no error, load up-to-date information on your account.\n  .then(function () {\n    return server.loadAccount(sourceKeys.publicKey());\n  })\n  .then(function (sourceAccount) {\n    // Start building the transaction.\n    transaction = new StellarSdk.TransactionBuilder(sourceAccount, {\n      fee: StellarSdk.BASE_FEE,\n      networkPassphrase: StellarSdk.Networks.TESTNET,\n    })\n      .addOperation(\n        StellarSdk.Operation.manageSellOffer({\n            selling: new StellarSdk.Asset(msg.payload.assetToBuy, 'GD5LYKVQZYHDNJ3QTEDX3EBF5XK3W5NADGTBT5KLD276OPP7YKDIQIBZ'),\n            buying: new StellarSdk.Asset(msg.payload.assetToSell, 'GD5LYKVQZYHDNJ3QTEDX3EBF5XK3W5NADGTBT5KLD276OPP7YKDIQIBZ'),\n            amount: msg.payload.amount,\n            price: msg.payload.price\n     }),\n      )\n      // A memo allows you to add your own metadata to a transaction. It's\n      // optional and does not affect how Stellar treats the transaction.\n      .addMemo(StellarSdk.Memo.text(\"Test Transaction\"))\n      // Wait a maximum of three minutes for the transaction\n      .setTimeout(180)\n      .build();\n    // Sign the transaction to prove you are actually the person sending it.\n    transaction.sign(sourceKeys);\n    // And finally, send it off to Stellar!\n    return server.submitTransaction(transaction);\n  })\n  .then(function (result) {\n    //console.log(\"Success! Results:\", result);\n    msg.payload = result;\n    node.send(msg);\n  })\n  .catch(function (error) {\n    console.error(\"Something went wrong!\", error);\n    // If the result is unknown (no response body, timeout etc.) we simply resubmit\n    // already built transaction:\n    // server.submitTransaction(transaction);\n  });",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 470,
+        "y": 1040,
+        "wires": [
+            [
+                "97321eb4.c24ae"
+            ]
+        ]
+    },
+    {
+        "id": "70431d01.f653b4",
+        "type": "inject",
+        "z": "e1a3be1e.3571d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload",
+                "v": "{\"secretKey\":\"SBSZQMYX2EAT6MGDOAJ3OONFHT6TVVWLLAZEESRIQ7G3CYLHTCWTC3UX\",\"sourceAccount\":\"GD5LYKVQZYHDNJ3QTEDX3EBF5XK3W5NADGTBT5KLD276OPP7YKDIQIBZ\",\"assetToSell\":\"XLM\",\"assetToBuy\":\"XCN\",\"amount\":\"0.1\",\"price\":\"2.5\"}",
+                "vt": "json"
+            },
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "string"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"secretKey\":\"SBSZQMYX2EAT6MGDOAJ3OONFHT6TVVWLLAZEESRIQ7G3CYLHTCWTC3UX\",\"sourceAccount\":\"GD5LYKVQZYHDNJ3QTEDX3EBF5XK3W5NADGTBT5KLD276OPP7YKDIQIBZ\",\"assetToSell\":\"XLM\",\"assetToBuy\":\"XCN\",\"amount\":\"0.1\",\"price\":\"2.5\"}",
+        "payloadType": "json",
+        "x": 240,
+        "y": 1040,
+        "wires": [
+            [
+                "bd5ddba4.6459b8"
+            ]
+        ]
+    },
+    {
+        "id": "97321eb4.c24ae",
+        "type": "debug",
+        "z": "e1a3be1e.3571d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 690,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "e71f8c00.f6d8c",
+        "type": "comment",
+        "z": "e1a3be1e.3571d",
+        "name": "Create offer",
+        "info": "",
+        "x": 420,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "da4a3f54.f4e15",
+        "type": "ui_text",
+        "z": "e1a3be1e.3571d",
+        "group": "1f563092.450a6f",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "balances result",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 970,
+        "y": 504,
+        "wires": []
+    },
+    {
+        "id": "d502f1d0.d9b54",
+        "type": "ui_text_input",
+        "z": "e1a3be1e.3571d",
+        "name": "Public Key",
+        "label": "Public Key",
+        "tooltip": "",
+        "group": "1f563092.450a6f",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "x": 300,
+        "y": 464,
+        "wires": [
+            [
+                "db84dba9.bca098"
+            ]
+        ]
+    },
+    {
+        "id": "db84dba9.bca098",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "Check Balances",
+        "func": "const fetch = global.get(\"nodefetch\");\n\nvar StellarSdk = global.get(\"stellarsdk\");\n// create a completely new and unique pair of keys\n// see more about KeyPair objects: https://stellar.github.io/js-stellar-sdk/Keypair.html\nconst key = msg.payload;\n\n\nconst server = new StellarSdk.Server(\"https://horizon-testnet.stellar.org\");\n// the JS SDK uses promises for most actions, such as retrieving an account\nconst account = await server.loadAccount(key);\n//console.log(\"Balances for account: \" + pair.publicKey());\nmsg.topic = \"Balances for account: \" + key\n\nvar bals = \"\";\n\naccount.balances.forEach(function (balance) {\n  console.log(\"Type:\", balance.asset_type, \", Balance:\", balance.balance);\n  msg.payload = \"Type: \"+ balance.asset_code+\", Balance: \"+balance.balance+\" \\n \"\n  //node.send(msg)\n  bals = bals +\" \"+ msg.payload\n});\n\nmsg.payload = bals\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 464,
+        "wires": [
+            [
+                "af22515e.f86d9",
+                "f8487bed.a46548",
+                "da4a3f54.f4e15"
+            ]
+        ]
+    },
+    {
+        "id": "f8487bed.a46548",
+        "type": "ui_text",
+        "z": "e1a3be1e.3571d",
+        "group": "1f563092.450a6f",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Balances header",
+        "label": "",
+        "format": "{{msg.topic}}",
+        "layout": "row-spread",
+        "x": 980,
+        "y": 464,
+        "wires": []
+    },
+    {
+        "id": "f4395daf.f79f",
+        "type": "ui_text_input",
+        "z": "e1a3be1e.3571d",
+        "name": "Secret Key",
+        "label": "Secret Key",
+        "tooltip": "",
+        "group": "c3c52113.338a9",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "x": 1170,
+        "y": 660,
+        "wires": [
+            [
+                "8f06f558.bec918"
+            ]
+        ]
+    },
+    {
+        "id": "612720db.4ada1",
+        "type": "ui_text",
+        "z": "e1a3be1e.3571d",
+        "group": "c3c52113.338a9",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "name": "Success text display",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 960,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "7c7247d3.5c6e18",
+        "type": "ui_text",
+        "z": "e1a3be1e.3571d",
+        "group": "c3c52113.338a9",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "Submitting text display",
+        "label": "",
+        "format": "{{msg.topic}}",
+        "layout": "row-spread",
+        "x": 960,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "53c77e9d.d066c",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "Submit XLM Transaction",
+        "func": "var StellarSdk = global.get(\"stellarsdk\");\nvar server = new StellarSdk.Server(\"https://horizon-testnet.stellar.org\");\nvar secret = flow.get('secret',secret);\nvar dest = flow.get('dest',dest);\nvar quantxlm = flow.get('quantxlm',quantxlm);\nvar asset = flow.get('asset',asset);\nvar assetiss = flow.get('assetiss',assetiss);\nvar memo = flow.get('memo',memo);\n\n\nvar sourceKeys = StellarSdk.Keypair.fromSecret(secret);\nvar destinationId = dest;\n// Transaction will hold a built transaction we can resubmit if the result is unknown.\nvar transaction;\n\n// First, check to make sure that the destination account exists.\n// You could skip this, but if the account does not exist, you will be charged\n// the transaction fee when the transaction fails.\nserver\n  .loadAccount(destinationId)\n  // If the account is not found, surface a nicer error message for logging.\n  .catch(function (error) {\n    if (error instanceof StellarSdk.NotFoundError) {\n      throw new Error(\"The destination account does not exist!\");\n    } else return error;\n  })\n  // If there was no error, load up-to-date information on your account.\n  .then(function () {\n    return server.loadAccount(sourceKeys.publicKey());\n  })\n  .then(function (sourceAccount) {\n    // Start building the transaction.\n    transaction = new StellarSdk.TransactionBuilder(sourceAccount, {\n      fee: StellarSdk.BASE_FEE,\n      networkPassphrase: StellarSdk.Networks.TESTNET,\n    })\n      .addOperation(\n        StellarSdk.Operation.payment({\n          destination: destinationId,\n          // Because Stellar allows transaction in many currencies, you must\n          // specify the asset type. The special \"native\" asset represents Lumens.\n          asset: StellarSdk.Asset.native(),\n          //asset: new StellarSdk.Asset(asset,assetiss),\n          amount: quantxlm,\n        }),\n      )\n      // A memo allows you to add your own metadata to a transaction. It's\n      // optional and does not affect how Stellar treats the transaction.\n      .addMemo(StellarSdk.Memo.text(memo))\n      // Wait a maximum of three minutes for the transaction\n      .setTimeout(180)\n      .build();\n    // Sign the transaction to prove you are actually the person sending it.\n    transaction.sign(sourceKeys);\n    // And finally, send it off to Stellar!\n    return server.submitTransaction(transaction);\n  })\n  .then(function (result) {\n    console.log(\"Success! Results:\", result);\n    msg.payload=\"Success\"+\" https://stellar.expert/explorer/testnet/account/\"+sourceKeys.publicKey();\n    node.send(msg);\n  })\n  .catch(function (error) {\n    console.error(\"Something went wrong!\", error);\n    // If the result is unknown (no response body, timeout etc.) we simply resubmit\n    // already built transaction:\n    // server.submitTransaction(transaction);\n  });",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 530,
+        "y": 760,
+        "wires": [
+            [
+                "612720db.4ada1",
+                "3d4c67b3.a92678",
+                "22e0c241.59bd6e"
+            ]
+        ]
+    },
+    {
+        "id": "3dfa8625.6156ba",
+        "type": "ui_text_input",
+        "z": "e1a3be1e.3571d",
+        "name": "Destination",
+        "label": "Destination",
+        "tooltip": "",
+        "group": "c3c52113.338a9",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "x": 1170,
+        "y": 700,
+        "wires": [
+            [
+                "92407a93.e8b6d8"
+            ]
+        ]
+    },
+    {
+        "id": "1eda8ae2.afb005",
+        "type": "ui_button",
+        "z": "e1a3be1e.3571d",
+        "name": "SendXLM",
+        "group": "c3c52113.338a9",
+        "order": 5,
+        "width": "12",
+        "height": "1",
+        "passthru": false,
+        "label": "Send XLM",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 260,
+        "y": 720,
+        "wires": [
+            [
+                "53c77e9d.d066c",
+                "556ecdd.dc6c434",
+                "e169c03a.d0b74"
+            ]
+        ]
+    },
+    {
+        "id": "8f06f558.bec918",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "secret",
+        "func": "var secret = msg.payload\nflow.set('secret',secret);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1410,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "54fb998a.fa6258",
+        "type": "ui_text_input",
+        "z": "e1a3be1e.3571d",
+        "name": "Amount",
+        "label": "Amount",
+        "tooltip": "",
+        "group": "c3c52113.338a9",
+        "order": 8,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "x": 1160,
+        "y": 820,
+        "wires": [
+            [
+                "f966427f.c21df"
+            ]
+        ]
+    },
+    {
+        "id": "92407a93.e8b6d8",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "dest",
+        "func": "var dest = msg.payload\nflow.set('dest',dest);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1410,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f966427f.c21df",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "quant",
+        "func": "var quant = msg.payload\nflow.set('quant',quant);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1410,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "556ecdd.dc6c434",
+        "type": "change",
+        "z": "e1a3be1e.3571d",
+        "name": "Status Update",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Sending Transaction To Stellar",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 680,
+        "wires": [
+            [
+                "7c7247d3.5c6e18"
+            ]
+        ]
+    },
+    {
+        "id": "e169c03a.d0b74",
+        "type": "change",
+        "z": "e1a3be1e.3571d",
+        "name": "Reset Field",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 720,
+        "wires": [
+            [
+                "612720db.4ada1"
+            ]
+        ]
+    },
+    {
+        "id": "3d4c67b3.a92678",
+        "type": "change",
+        "z": "e1a3be1e.3571d",
+        "name": "Reset Field",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 700,
+        "wires": [
+            [
+                "7c7247d3.5c6e18"
+            ]
+        ]
+    },
+    {
+        "id": "2840c9e9.a1c026",
+        "type": "ui_text_input",
+        "z": "e1a3be1e.3571d",
+        "name": "Secret Key",
+        "label": "Secret Key",
+        "tooltip": "",
+        "group": "ad15b2e3.60848",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "x": 1110,
+        "y": 1080,
+        "wires": [
+            [
+                "3898033b.99490c"
+            ]
+        ]
+    },
+    {
+        "id": "aa46f17e.ea646",
+        "type": "ui_text_input",
+        "z": "e1a3be1e.3571d",
+        "name": "Asset to sell - Name",
+        "label": "Asset to sell - Name",
+        "tooltip": "",
+        "group": "ad15b2e3.60848",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "x": 1140,
+        "y": 1120,
+        "wires": [
+            [
+                "927ca549.c33d18"
+            ]
+        ]
+    },
+    {
+        "id": "5e865db9.a1c1a4",
+        "type": "ui_text_input",
+        "z": "e1a3be1e.3571d",
+        "name": "Amount",
+        "label": "Amount",
+        "tooltip": "",
+        "group": "ad15b2e3.60848",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "x": 1100,
+        "y": 1200,
+        "wires": [
+            [
+                "f43002bd.b5b33"
+            ]
+        ]
+    },
+    {
+        "id": "abbec0bf.506d5",
+        "type": "ui_text_input",
+        "z": "e1a3be1e.3571d",
+        "name": "Price",
+        "label": "Price",
+        "tooltip": "",
+        "group": "ad15b2e3.60848",
+        "order": 7,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "x": 1090,
+        "y": 1320,
+        "wires": [
+            [
+                "ffc80450.9992e8"
+            ]
+        ]
+    },
+    {
+        "id": "e4e61f7.debe1e",
+        "type": "ui_text_input",
+        "z": "e1a3be1e.3571d",
+        "name": "Asset to buy - Name",
+        "label": "Asset to buy - Name",
+        "tooltip": "",
+        "group": "ad15b2e3.60848",
+        "order": 5,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "x": 1140,
+        "y": 1240,
+        "wires": [
+            [
+                "51ad1713.cc50f8"
+            ]
+        ]
+    },
+    {
+        "id": "3898033b.99490c",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "secret2",
+        "func": "var secret2 = msg.payload\nflow.set('secret2',secret2);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1320,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "927ca549.c33d18",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "sell",
+        "func": "var sell = msg.payload\nflow.set('sell',sell);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1310,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f43002bd.b5b33",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "quant2",
+        "func": "var quant2 = msg.payload\nflow.set('quant2',quant2);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1310,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7152c22e.cb5abc",
+        "type": "ui_text",
+        "z": "e1a3be1e.3571d",
+        "group": "ad15b2e3.60848",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "Success text display",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 880,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "c47bf282.6e658",
+        "type": "ui_text",
+        "z": "e1a3be1e.3571d",
+        "group": "ad15b2e3.60848",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "Submitting text display",
+        "label": "",
+        "format": "{{msg.topic}}",
+        "layout": "row-spread",
+        "x": 880,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "93f4704e.26401",
+        "type": "ui_button",
+        "z": "e1a3be1e.3571d",
+        "name": "Submit Offer",
+        "group": "ad15b2e3.60848",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Submit Offer",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 150,
+        "y": 1160,
+        "wires": [
+            [
+                "2d7986f6.bee62a",
+                "5e0a51c1.b1e61",
+                "526f7526.dc05cc"
+            ]
+        ]
+    },
+    {
+        "id": "2d7986f6.bee62a",
+        "type": "change",
+        "z": "e1a3be1e.3571d",
+        "name": "Status Update",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Sending Transaction To Stellar",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 1120,
+        "wires": [
+            [
+                "c47bf282.6e658"
+            ]
+        ]
+    },
+    {
+        "id": "5e0a51c1.b1e61",
+        "type": "change",
+        "z": "e1a3be1e.3571d",
+        "name": "Reset Field",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 1160,
+        "wires": [
+            [
+                "7152c22e.cb5abc"
+            ]
+        ]
+    },
+    {
+        "id": "8629d5eb.2e4d08",
+        "type": "change",
+        "z": "e1a3be1e.3571d",
+        "name": "Reset Field",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 1140,
+        "wires": [
+            [
+                "c47bf282.6e658"
+            ]
+        ]
+    },
+    {
+        "id": "51ad1713.cc50f8",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "buy",
+        "func": "var buy = msg.payload\nflow.set('buy',buy);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1310,
+        "y": 1240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ffc80450.9992e8",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "price2",
+        "func": "var price2 = msg.payload\nflow.set('price2',price2);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1310,
+        "y": 1320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2d7d4507.02854a",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "Create Sell Offer",
+        "func": "var StellarSdk = global.get(\"stellarsdk\");\nvar server = new StellarSdk.Server(\"https://horizon-testnet.stellar.org\");\n\nvar secret2 = flow.get('secret2',secret2);\nvar sell = flow.get('sell',sell);\nvar selliss = flow.get('selliss',selliss);\nvar quant2 = flow.get('quant2',quant2);\nvar buy = flow.get('buy',buy);\nvar buyiss = flow.get('buyiss',buyiss);\nvar price2 = flow.get('price2',price2);\nvar memo = flow.get('memo',memo)\n\nvar sourceKeys = StellarSdk.Keypair.fromSecret(\n  secret2,\n);\n//var destinationId = msg.payload.sourceAccount;\n// Transaction will hold a built transaction we can resubmit if the result is unknown.\nvar transaction;\n\n// First, check to make sure that the destination account exists.\n// You could skip this, but if the account does not exist, you will be charged\n// the transaction fee when the transaction fails.\nserver\n  //.loadAccount(destinationId)\n  // If the account is not found, surface a nicer error message for logging.\n  //.catch(function (error) {\n   // if (error instanceof StellarSdk.NotFoundError) {\n  //    throw new Error(\"The destination account does not exist!\");\n  //  } else return error;\n // })\n  // If there was no error, load up-to-date information on your account.\n  .loadAccount(sourceKeys.publicKey())\n  \n  .then(function (sourceAccount) {\n    // Start building the transaction.\n    transaction = new StellarSdk.TransactionBuilder(sourceAccount, {\n      fee: StellarSdk.BASE_FEE,\n      networkPassphrase: StellarSdk.Networks.TESTNET,\n    })\n      .addOperation(\n        StellarSdk.Operation.manageSellOffer({\n            selling: new StellarSdk.Asset(sell,selliss),\n            buying: new StellarSdk.Asset(buy,buyiss),\n            amount: quant2,\n            price: price2\n     }),\n      )\n      // A memo allows you to add your own metadata to a transaction. It's\n      // optional and does not affect how Stellar treats the transaction.\n      .addMemo(StellarSdk.Memo.text(memo))\n      // Wait a maximum of three minutes for the transaction\n      .setTimeout(180)\n      .build();\n    // Sign the transaction to prove you are actually the person sending it.\n    transaction.sign(sourceKeys);\n    // And finally, send it off to Stellar!\n    return server.submitTransaction(transaction);\n  })\n  .then(function (result) {\n    //console.log(\"Success! Results:\", result);\n    msg.payload = \"Success\"+\" https://stellar.expert/explorer/testnet/account/\"+sourceKeys.publicKey();\n    node.send(msg);\n  })\n  .catch(function (error) {\n    console.error(\"Something went wrong!\", error);\n    // If the result is unknown (no response body, timeout etc.) we simply resubmit\n    // already built transaction:\n    // server.submitTransaction(transaction);\n  });",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 450,
+        "y": 1200,
+        "wires": [
+            [
+                "8629d5eb.2e4d08",
+                "7152c22e.cb5abc",
+                "97321eb4.c24ae"
+            ]
+        ]
+    },
+    {
+        "id": "76d3ad49.5636e4",
+        "type": "ui_text_input",
+        "z": "e1a3be1e.3571d",
+        "name": "Asset to sell - Issuer",
+        "label": "Asset to sell - Issuer",
+        "tooltip": "",
+        "group": "ad15b2e3.60848",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "x": 1140,
+        "y": 1160,
+        "wires": [
+            [
+                "cbf65520.e52ae8"
+            ]
+        ]
+    },
+    {
+        "id": "cbf65520.e52ae8",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "selliss",
+        "func": "var selliss = msg.payload\nflow.set('selliss',selliss);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1310,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "74c60b94.5294a4",
+        "type": "ui_text_input",
+        "z": "e1a3be1e.3571d",
+        "name": "Asset to buy - Issuer",
+        "label": "Asset to buy - Issuer",
+        "tooltip": "",
+        "group": "ad15b2e3.60848",
+        "order": 6,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "x": 1140,
+        "y": 1280,
+        "wires": [
+            [
+                "aa44702b.3e9dc"
+            ]
+        ]
+    },
+    {
+        "id": "aa44702b.3e9dc",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "buyiss",
+        "func": "var buyiss = msg.payload\nflow.set('buyiss',buyiss);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1310,
+        "y": 1280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c072723e.205b6",
+        "type": "ui_text_input",
+        "z": "e1a3be1e.3571d",
+        "name": "Asset",
+        "label": "Asset",
+        "tooltip": "",
+        "group": "c3c52113.338a9",
+        "order": 6,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "x": 1150,
+        "y": 740,
+        "wires": [
+            [
+                "9c0857b6.dbadb8"
+            ]
+        ]
+    },
+    {
+        "id": "aff7e18b.d3b58",
+        "type": "ui_text_input",
+        "z": "e1a3be1e.3571d",
+        "name": "Issuer",
+        "label": "Issuer",
+        "tooltip": "",
+        "group": "c3c52113.338a9",
+        "order": 7,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "x": 1150,
+        "y": 780,
+        "wires": [
+            [
+                "cf2df40c.68c5e8"
+            ]
+        ]
+    },
+    {
+        "id": "9c0857b6.dbadb8",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "asset",
+        "func": "var asset = msg.payload\nflow.set('asset',asset);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1410,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cf2df40c.68c5e8",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "assetiss",
+        "func": "var assetiss = msg.payload\nflow.set('assetiss',assetiss);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1420,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "934d0b5.19807f8",
+        "type": "ui_text_input",
+        "z": "e1a3be1e.3571d",
+        "name": "AmountXLM",
+        "label": "AmountXLM",
+        "tooltip": "",
+        "group": "c3c52113.338a9",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "x": 1170,
+        "y": 860,
+        "wires": [
+            [
+                "66fb5342.5d2e8c"
+            ]
+        ]
+    },
+    {
+        "id": "66fb5342.5d2e8c",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "quantxlm",
+        "func": "var quantxlm = msg.payload\nflow.set('quantxlm',quantxlm);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1420,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "272d2dc.785acd2",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "Submit Token Transaction",
+        "func": "var StellarSdk = global.get(\"stellarsdk\");\nvar server = new StellarSdk.Server(\"https://horizon-testnet.stellar.org\");\nvar secret = flow.get('secret',secret);\nvar dest = flow.get('dest',dest);\nvar quant = flow.get('quant',quant);\nvar asset = flow.get('asset',asset);\nvar assetiss = flow.get('assetiss',assetiss);\nvar memo = flow.get('memo',memo);\n\n\nvar sourceKeys = StellarSdk.Keypair.fromSecret(secret);\nvar destinationId = dest;\n// Transaction will hold a built transaction we can resubmit if the result is unknown.\nvar transaction;\n\n// First, check to make sure that the destination account exists.\n// You could skip this, but if the account does not exist, you will be charged\n// the transaction fee when the transaction fails.\nserver\n  .loadAccount(destinationId)\n  // If the account is not found, surface a nicer error message for logging.\n  .catch(function (error) {\n    if (error instanceof StellarSdk.NotFoundError) {\n      throw new Error(\"The destination account does not exist!\");\n    } else return error;\n  })\n  // If there was no error, load up-to-date information on your account.\n  .then(function () {\n    return server.loadAccount(sourceKeys.publicKey());\n  })\n  .then(function (sourceAccount) {\n    // Start building the transaction.\n    transaction = new StellarSdk.TransactionBuilder(sourceAccount, {\n      fee: StellarSdk.BASE_FEE,\n      networkPassphrase: StellarSdk.Networks.TESTNET,\n    })\n      .addOperation(\n        StellarSdk.Operation.payment({\n          destination: destinationId,\n          // Because Stellar allows transaction in many currencies, you must\n          // specify the asset type. The special \"native\" asset represents Lumens.\n          //asset: StellarSdk.Asset.native(),\n          asset: new StellarSdk.Asset(asset,assetiss),\n          amount: quant,\n        }),\n      )\n      // A memo allows you to add your own metadata to a transaction. It's\n      // optional and does not affect how Stellar treats the transaction.\n      .addMemo(StellarSdk.Memo.text(memo))\n      // Wait a maximum of three minutes for the transaction\n      .setTimeout(180)\n      .build();\n    // Sign the transaction to prove you are actually the person sending it.\n    transaction.sign(sourceKeys);\n    // And finally, send it off to Stellar!\n    return server.submitTransaction(transaction);\n  })\n  .then(function (result) {\n    console.log(\"Success! Results:\", result);\n    msg.payload=\"Success\"+\" https://stellar.expert/explorer/testnet/account/\"+sourceKeys.publicKey();\n    node.send(msg);\n  })\n  .catch(function (error) {\n    console.error(\"Something went wrong!\", error);\n    // If the result is unknown (no response body, timeout etc.) we simply resubmit\n    // already built transaction:\n    // server.submitTransaction(transaction);\n  });",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 530,
+        "y": 820,
+        "wires": [
+            [
+                "612720db.4ada1",
+                "3d4c67b3.a92678",
+                "22e0c241.59bd6e"
+            ]
+        ]
+    },
+    {
+        "id": "6ad7ac1d.5167d4",
+        "type": "ui_button",
+        "z": "e1a3be1e.3571d",
+        "name": "Send Token",
+        "group": "c3c52113.338a9",
+        "order": 9,
+        "width": "12",
+        "height": "1",
+        "passthru": false,
+        "label": "Send Token",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 270,
+        "y": 820,
+        "wires": [
+            [
+                "272d2dc.785acd2",
+                "556ecdd.dc6c434",
+                "e169c03a.d0b74"
+            ]
+        ]
+    },
+    {
+        "id": "9d11e5eb.cc4cd8",
+        "type": "comment",
+        "z": "e1a3be1e.3571d",
+        "name": "Stellar Testnet Nodes UI",
+        "info": "",
+        "x": 710,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "92c8f2ca.8ab9",
+        "type": "debug",
+        "z": "e1a3be1e.3571d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 710,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "b0981b7e.d17f08",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "return keypair",
+        "func": "const fetch = global.get(\"nodefetch\");\n\nvar StellarSdk = global.get(\"stellarsdk\");\n// create a completely new and unique pair of keys\n// see more about KeyPair objects: https://stellar.github.io/js-stellar-sdk/Keypair.html\nconst pair = StellarSdk.Keypair.random();\n\n//console.log(pair.secret());\nmsg.payload = \"Pair secret: \" + pair.secret()\nnode.send(msg)\n// SAV76USXIJOBMEQXPANUOQM6F5LIOTLPDIDVRJBFFE2MDJXG24TAPUU7\n//console.log(pair.publicKey());\nmsg.payload = \"Pair publickey: \" + pair.publicKey()\nnode.send(msg)\n// GCFXHS4GXL6BVUCXBWXGTITROWLVYXQKQLF4YH5O5JT3YZXCYPAFBJZB\nasync function main() {\n  try {\n    const response = await fetch(\n      `https://friendbot.stellar.org?addr=${encodeURIComponent(\n        pair.publicKey(),\n      )}`,\n    );\n    const responseJSON = await response.json();\n    console.log(\"SUCCESS! You have a new account :)\\n\", responseJSON);\n  } catch (e) {\n    console.log(\"ERROR!\", e);\n  }\n\n\n}\nmain()\n\nmsg.payload=pair.secret();\n\nmsg.topic=pair.publicKey();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 410,
+        "y": 1440,
+        "wires": [
+            [
+                "92c8f2ca.8ab9",
+                "34ac11cd.c3526e",
+                "ecfb7374.44af1",
+                "1ad19401.84821c",
+                "83bb5b0f.152ab8"
+            ]
+        ]
+    },
+    {
+        "id": "624f9c80.dc78c4",
+        "type": "ui_button",
+        "z": "e1a3be1e.3571d",
+        "name": "",
+        "group": "a947341d.96f6c8",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "generate keypair",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 220,
+        "y": 1440,
+        "wires": [
+            [
+                "b0981b7e.d17f08"
+            ]
+        ]
+    },
+    {
+        "id": "34ac11cd.c3526e",
+        "type": "ui_text",
+        "z": "e1a3be1e.3571d",
+        "group": "a947341d.96f6c8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Public",
+        "label": "Public",
+        "format": "{{msg.topic}}",
+        "layout": "col-center",
+        "x": 710,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "ecfb7374.44af1",
+        "type": "ui_text",
+        "z": "e1a3be1e.3571d",
+        "group": "a947341d.96f6c8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Secret",
+        "label": "Secret",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 710,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "b647e0dc.6b95",
+        "type": "comment",
+        "z": "e1a3be1e.3571d",
+        "name": "Generate Keypair",
+        "info": "",
+        "x": 400,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "d962cf07.e380e",
+        "type": "comment",
+        "z": "e1a3be1e.3571d",
+        "name": "Store Variables from Dashboard UI",
+        "info": "",
+        "x": 1300,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "9dd241e6.50e0f",
+        "type": "comment",
+        "z": "e1a3be1e.3571d",
+        "name": "Store Variables from Dashboard UI",
+        "info": "",
+        "x": 1200,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "99256bbb.9268d8",
+        "type": "ui_text",
+        "z": "e1a3be1e.3571d",
+        "group": "a947341d.96f6c8",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Success text display",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 760,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "83bb5b0f.152ab8",
+        "type": "change",
+        "z": "e1a3be1e.3571d",
+        "name": "Status Update",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Success! Account funded by friendbot (can take up to 30s to show up)",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 1540,
+        "wires": [
+            [
+                "99256bbb.9268d8"
+            ]
+        ]
+    },
+    {
+        "id": "1ad19401.84821c",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "Show link",
+        "func": "msg.payload=\"https://stellar.expert/explorer/testnet/account/\"+msg.topic;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 540,
+        "y": 1580,
+        "wires": [
+            [
+                "d275c496.6c1888"
+            ]
+        ]
+    },
+    {
+        "id": "d275c496.6c1888",
+        "type": "ui_text",
+        "z": "e1a3be1e.3571d",
+        "group": "a947341d.96f6c8",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Link text display",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 740,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "85865e9a.bf4e7",
+        "type": "ui_text_input",
+        "z": "e1a3be1e.3571d",
+        "name": "Memo",
+        "label": "Memo",
+        "tooltip": "",
+        "group": "c3c52113.338a9",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "x": 1150,
+        "y": 900,
+        "wires": [
+            [
+                "6c85e277.80215c"
+            ]
+        ]
+    },
+    {
+        "id": "6c85e277.80215c",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "memo",
+        "func": "var memo = msg.payload\nflow.set('memo',memo);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is deployed.\nvar memo = \"Via BlockShangerous NodeRed\"\nflow.set('memo',memo);",
+        "finalize": "",
+        "x": 1410,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "39c5a94b.239ff6",
+        "type": "debug",
+        "z": "e1a3be1e.3571d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "7117e897.ba00a8",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "add trust",
+        "func": "var StellarSdk = global.get(\"stellarsdk\");\nvar server = new StellarSdk.Server(\"https://horizon-testnet.stellar.org\");\nvar secret = flow.get('secret',secret);\nvar asset = flow.get('asset',asset);\nvar assetiss = flow.get('assetiss',assetiss);\n\nvar sourceKeys = StellarSdk.Keypair.fromSecret(secret);\n//var destinationId = recipient;\n// Transaction will hold a built transaction we can resubmit if the result is unknown.\nvar transaction;\n\n// First, check to make sure that the destination account exists.\n// You could skip this, but if the account does not exist, you will be charged\n// the transaction fee when the transaction fails.\nserver\n  .loadAccount(sourceKeys.publicKey())\n\n  .then(function (sourceAccount) {\n    // Start building the transaction.\n    transaction = new StellarSdk.TransactionBuilder(sourceAccount, {\n      fee: StellarSdk.BASE_FEE,\n      networkPassphrase: StellarSdk.Networks.TESTNET,\n    })\n      .addOperation(\n        StellarSdk.Operation.changeTrust({\n          //destination: destinationId,\n          // Because Stellar allows transaction in many currencies, you must\n          // specify the asset type. The special \"native\" asset represents Lumens.\n          //asset: StellarSdk.Asset.native(),\n          asset: new StellarSdk.Asset(asset,assetiss),\n          //amount: amount,\n        }),\n      )\n      // A memo allows you to add your own metadata to a transaction. It's\n      // optional and does not affect how Stellar treats the transaction.\n      .addMemo(StellarSdk.Memo.text('Trust in StellarRed'))\n      // Wait a maximum of three minutes for the transaction\n      .setTimeout(180)\n      .build();\n    // Sign the transaction to prove you are actually the person sending it.\n    transaction.sign(sourceKeys);\n    // And finally, send it off to Stellar!\n    return server.submitTransaction(transaction);\n  })\n  .then(function (result) {\n    console.log(\"Success! Results:\", result);\n    msg.payload=\"Success\"+\" https://stellar.expert/explorer/testnet/account/\"+sourceKeys.publicKey();\n    node.send(msg);\n  })\n  .catch(function (error) {\n    console.error(\"Something went wrong!\", error);\n    // If the result is unknown (no response body, timeout etc.) we simply resubmit\n    // already built transaction:\n    // server.submitTransaction(transaction);\n  });",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 360,
+        "y": 1780,
+        "wires": [
+            [
+                "39c5a94b.239ff6",
+                "9628b69f.1117b8"
+            ]
+        ]
+    },
+    {
+        "id": "5878cc21.fcda44",
+        "type": "inject",
+        "z": "e1a3be1e.3571d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "SDVO2J7XOJYWWYC3XCTKW26S7XVO5BMYKRQSOV43USOKM33TWG4ATAOP",
+        "payloadType": "str",
+        "x": 180,
+        "y": 1780,
+        "wires": [
+            [
+                "7117e897.ba00a8"
+            ]
+        ]
+    },
+    {
+        "id": "fcb8c9ab.b33aa8",
+        "type": "comment",
+        "z": "e1a3be1e.3571d",
+        "name": "Add Trustline",
+        "info": "",
+        "x": 330,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "d7178576.80ea38",
+        "type": "debug",
+        "z": "e1a3be1e.3571d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 2060,
+        "wires": []
+    },
+    {
+        "id": "3fe7ed32.0807f2",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "return public from secret",
+        "func": "var StellarSdk = global.get(\"stellarsdk\");\nvar server = new StellarSdk.Server(\"https://horizon-testnet.stellar.org\");\nvar secret = msg.payload;\n\n\nvar sourceKeys = StellarSdk.Keypair.fromSecret(secret);\nmsg.payload=sourceKeys.publicKey()\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 390,
+        "y": 2060,
+        "wires": [
+            [
+                "d7178576.80ea38",
+                "483638e4.a24a98"
+            ]
+        ]
+    },
+    {
+        "id": "b6d5dabc.94b738",
+        "type": "inject",
+        "z": "e1a3be1e.3571d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "SATY6XOPDHWSMPTYICPDKQEEHNRSDFLM472AKDYYIBJVZFLSYHKHSY7F",
+        "payloadType": "str",
+        "x": 160,
+        "y": 2060,
+        "wires": [
+            [
+                "3fe7ed32.0807f2"
+            ]
+        ]
+    },
+    {
+        "id": "311db771.2e6ad8",
+        "type": "comment",
+        "z": "e1a3be1e.3571d",
+        "name": "Get Public",
+        "info": "",
+        "x": 300,
+        "y": 2000,
+        "wires": []
+    },
+    {
+        "id": "8ded31f.251b9d",
+        "type": "ui_button",
+        "z": "e1a3be1e.3571d",
+        "name": "Get Public",
+        "group": "c3c52113.338a9",
+        "order": 16,
+        "width": "12",
+        "height": "1",
+        "passthru": false,
+        "label": "Get Public",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 170,
+        "y": 2120,
+        "wires": [
+            [
+                "dcdb9738.89dda8"
+            ]
+        ]
+    },
+    {
+        "id": "483638e4.a24a98",
+        "type": "ui_text",
+        "z": "e1a3be1e.3571d",
+        "group": "c3c52113.338a9",
+        "order": 17,
+        "width": 0,
+        "height": 0,
+        "name": "Success text display",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 660,
+        "y": 2120,
+        "wires": []
+    },
+    {
+        "id": "dcdb9738.89dda8",
+        "type": "ui_text_input",
+        "z": "e1a3be1e.3571d",
+        "name": "Secret Key",
+        "label": "Secret Key",
+        "tooltip": "",
+        "group": "c3c52113.338a9",
+        "order": 15,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "topicType": "str",
+        "x": 330,
+        "y": 2180,
+        "wires": [
+            [
+                "3fe7ed32.0807f2"
+            ]
+        ]
+    },
+    {
+        "id": "5a0ed23.947082c",
+        "type": "ui_button",
+        "z": "e1a3be1e.3571d",
+        "name": "Add Trust",
+        "group": "c3c52113.338a9",
+        "order": 12,
+        "width": "12",
+        "height": "1",
+        "passthru": false,
+        "label": "Add Trust",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 160,
+        "y": 1840,
+        "wires": [
+            [
+                "7117e897.ba00a8",
+                "afd70817.be9848"
+            ]
+        ]
+    },
+    {
+        "id": "9628b69f.1117b8",
+        "type": "ui_text",
+        "z": "e1a3be1e.3571d",
+        "group": "c3c52113.338a9",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "name": "Success text display",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 660,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "afd70817.be9848",
+        "type": "change",
+        "z": "e1a3be1e.3571d",
+        "name": "Status Update",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Sending Transaction To Stellar",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 1840,
+        "wires": [
+            [
+                "9628b69f.1117b8"
+            ]
+        ]
+    },
+    {
+        "id": "746f6a90.d62e74",
+        "type": "comment",
+        "z": "e1a3be1e.3571d",
+        "name": "THIS IS AN EXPERIMENTAL BETA. IF YOU CHOOSE TO USE IT ON MAINNET YOU DO SO AT YOUR OWN RISK. \\n BE CAREFUL. \\n THIS IS NOT READY FOR MAINNET DEPLOYMENT. YOU'VE BEEN WARNED. \\n There is currently no methodology for handling errors from the Stellar network. \\n If you cannot figure out why something isn't working I recommend exporting the tx as an XDR and inputting that in the Stellar Laboratory",
+        "info": "",
+        "x": 770,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "27169a60.95b296",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "Create Sell Offer",
+        "func": "var StellarSdk = global.get(\"stellarsdk\");\nvar server = new StellarSdk.Server(\"https://horizon-testnet.stellar.org\");\n\nvar secret2 = flow.get('secret2',secret2);\nvar sell = flow.get('sell',sell);\nvar selliss = flow.get('selliss',selliss);\nvar quant2 = flow.get('quant2',quant2);\nvar buy = flow.get('buy',buy);\nvar buyiss = flow.get('buyiss',buyiss);\nvar price2 = flow.get('price2',price2);\nvar memo = flow.get('memo',memo)\n\nvar sourceKeys = StellarSdk.Keypair.fromSecret(\n  secret2,\n);\n//var destinationId = msg.payload.sourceAccount;\n// Transaction will hold a built transaction we can resubmit if the result is unknown.\nvar transaction;\n\n// First, check to make sure that the destination account exists.\n// You could skip this, but if the account does not exist, you will be charged\n// the transaction fee when the transaction fails.\nserver\n  //.loadAccount(destinationId)\n  // If the account is not found, surface a nicer error message for logging.\n  //.catch(function (error) {\n   // if (error instanceof StellarSdk.NotFoundError) {\n  //    throw new Error(\"The destination account does not exist!\");\n  //  } else return error;\n // })\n  // If there was no error, load up-to-date information on your account.\n  .loadAccount(sourceKeys.publicKey())\n  \n  .then(function (sourceAccount) {\n    // Start building the transaction.\n    transaction = new StellarSdk.TransactionBuilder(sourceAccount, {\n      fee: StellarSdk.BASE_FEE,\n      networkPassphrase: StellarSdk.Networks.TESTNET,\n    })\n      .addOperation(\n        StellarSdk.Operation.manageSellOffer({\n            selling: new StellarSdk.Asset.native(),\n            buying: new StellarSdk.Asset(buy,buyiss),\n            amount: quant2,\n            price: price2\n     }),\n      )\n      // A memo allows you to add your own metadata to a transaction. It's\n      // optional and does not affect how Stellar treats the transaction.\n      .addMemo(StellarSdk.Memo.text(memo))\n      // Wait a maximum of three minutes for the transaction\n      .setTimeout(180)\n      .build();\n    // Sign the transaction to prove you are actually the person sending it.\n    transaction.sign(sourceKeys);\n    // And finally, send it off to Stellar!\n    return server.submitTransaction(transaction);\n  })\n  .then(function (result) {\n    //console.log(\"Success! Results:\", result);\n    msg.payload = \"Success\"+\" https://stellar.expert/explorer/testnet/account/\"+sourceKeys.publicKey();\n    node.send(msg);\n  })\n  .catch(function (error) {\n    console.error(\"Something went wrong!\", error);\n    // If the result is unknown (no response body, timeout etc.) we simply resubmit\n    // already built transaction:\n    // server.submitTransaction(transaction);\n  });",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 450,
+        "y": 1240,
+        "wires": [
+            [
+                "7152c22e.cb5abc",
+                "97321eb4.c24ae",
+                "8629d5eb.2e4d08"
+            ]
+        ]
+    },
+    {
+        "id": "45f65ad4.bc2c34",
+        "type": "function",
+        "z": "e1a3be1e.3571d",
+        "name": "Create Sell Offer",
+        "func": "var StellarSdk = global.get(\"stellarsdk\");\nvar server = new StellarSdk.Server(\"https://horizon-testnet.stellar.org\");\n\nvar secret2 = flow.get('secret2',secret2);\nvar sell = flow.get('sell',sell);\nvar selliss = flow.get('selliss',selliss);\nvar quant2 = flow.get('quant2',quant2);\nvar buy = flow.get('buy',buy);\nvar buyiss = flow.get('buyiss',buyiss);\nvar price2 = flow.get('price2',price2);\nvar memo = flow.get('memo',memo)\n\nvar sourceKeys = StellarSdk.Keypair.fromSecret(\n  secret2,\n);\n//var destinationId = msg.payload.sourceAccount;\n// Transaction will hold a built transaction we can resubmit if the result is unknown.\nvar transaction;\n\n// First, check to make sure that the destination account exists.\n// You could skip this, but if the account does not exist, you will be charged\n// the transaction fee when the transaction fails.\nserver\n  //.loadAccount(destinationId)\n  // If the account is not found, surface a nicer error message for logging.\n  //.catch(function (error) {\n   // if (error instanceof StellarSdk.NotFoundError) {\n  //    throw new Error(\"The destination account does not exist!\");\n  //  } else return error;\n // })\n  // If there was no error, load up-to-date information on your account.\n  .loadAccount(sourceKeys.publicKey())\n  \n  .then(function (sourceAccount) {\n    // Start building the transaction.\n    transaction = new StellarSdk.TransactionBuilder(sourceAccount, {\n      fee: StellarSdk.BASE_FEE,\n      networkPassphrase: StellarSdk.Networks.TESTNET,\n    })\n      .addOperation(\n        StellarSdk.Operation.manageSellOffer({\n            selling: new StellarSdk.Asset(sell,selliss),\n            buying: new StellarSdk.Asset.native(),\n            amount: quant2,\n            price: price2\n     }),\n      )\n      // A memo allows you to add your own metadata to a transaction. It's\n      // optional and does not affect how Stellar treats the transaction.\n      .addMemo(StellarSdk.Memo.text(memo))\n      // Wait a maximum of three minutes for the transaction\n      .setTimeout(180)\n      .build();\n    // Sign the transaction to prove you are actually the person sending it.\n    transaction.sign(sourceKeys);\n    // And finally, send it off to Stellar!\n    return server.submitTransaction(transaction);\n  })\n  .then(function (result) {\n    //console.log(\"Success! Results:\", result);\n    msg.payload = \"Success\"+\" https://stellar.expert/explorer/testnet/account/\"+sourceKeys.publicKey();\n    node.send(msg);\n  })\n  .catch(function (error) {\n    console.error(\"Something went wrong!\", error);\n    // If the result is unknown (no response body, timeout etc.) we simply resubmit\n    // already built transaction:\n    // server.submitTransaction(transaction);\n  });",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 450,
+        "y": 1280,
+        "wires": [
+            [
+                "7152c22e.cb5abc",
+                "97321eb4.c24ae",
+                "8629d5eb.2e4d08"
+            ]
+        ]
+    },
+    {
+        "id": "526f7526.dc05cc",
+        "type": "switch",
+        "z": "e1a3be1e.3571d",
+        "name": "sell check",
+        "property": "sell",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "XLM",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "XLM",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 120,
+        "y": 1260,
+        "wires": [
+            [
+                "3c738c9e.e8b194"
+            ],
+            [
+                "27169a60.95b296"
+            ]
+        ]
+    },
+    {
+        "id": "3c738c9e.e8b194",
+        "type": "switch",
+        "z": "e1a3be1e.3571d",
+        "name": "buy check",
+        "property": "buy",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "XLM",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "XLM",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 260,
+        "y": 1300,
+        "wires": [
+            [
+                "2d7d4507.02854a"
+            ],
+            [
+                "45f65ad4.bc2c34"
+            ]
+        ]
+    },
+    {
+        "id": "5b2c21f7.bd5df",
+        "type": "inject",
+        "z": "c24acee5.55115",
+        "name": "",
+        "props": [
+            {
+                "p": "secret",
+                "v": "SBSZQMYX2EAT6MGDOAJ3OONFHT6TVVWLLAZEESRIQ7G3CYLHTCWTC3UX",
+                "vt": "str"
+            },
+            {
+                "p": "name",
+                "v": "COOL",
+                "vt": "str"
+            },
+            {
+                "p": "iss",
+                "v": "GBN5VTPXODILAQTMMB23ML5B7RKF657YXXALLWFKGZPSW53QGR6OUG4L",
+                "vt": "str"
+            },
+            {
+                "p": "op",
+                "v": "changeTrust",
+                "vt": "str"
+            },
+            {
+                "p": "dest",
+                "v": "GAC4LTCWBQAVRNXP67QMT55KZ3BIYPVMLIC46FYSO6HN2ZFZLFKW5WJX",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "str",
+        "x": 170,
+        "y": 180,
+        "wires": [
+            [
+                "e6f94184.3fe5f"
+            ]
+        ]
+    },
+    {
+        "id": "224ae177.363a9e",
+        "type": "comment",
+        "z": "c24acee5.55115",
+        "name": "Create Multiple NFTs",
+        "info": "",
+        "x": 350,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "c3cee975.8c5ba8",
+        "type": "ui_button",
+        "z": "c24acee5.55115",
+        "name": "Create NFTs",
+        "group": "60973256.20713c",
+        "order": 8,
+        "width": "6",
+        "height": "1",
+        "passthru": false,
+        "label": "Create NFTs",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 100,
+        "y": 320,
+        "wires": [
+            [
+                "8f30390b.9e0e08",
+                "ae1fb466.09b438"
+            ]
+        ]
+    },
+    {
+        "id": "f1c7ce20.95a5d",
+        "type": "ui_text_input",
+        "z": "c24acee5.55115",
+        "name": "Asset - Name",
+        "label": "Asset - Name",
+        "tooltip": "",
+        "group": "60973256.20713c",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "topicType": "str",
+        "x": 1180,
+        "y": 920,
+        "wires": [
+            [
+                "70ea4da1.941954"
+            ]
+        ]
+    },
+    {
+        "id": "8ef3bf7a.660e6",
+        "type": "ui_text_input",
+        "z": "c24acee5.55115",
+        "name": "Amount",
+        "label": "Amount (max 30)",
+        "tooltip": "",
+        "group": "60973256.20713c",
+        "order": 5,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "topicType": "str",
+        "x": 1160,
+        "y": 1040,
+        "wires": [
+            [
+                "6ba422a8.9537fc"
+            ]
+        ]
+    },
+    {
+        "id": "927c5a37.bdb248",
+        "type": "ui_text_input",
+        "z": "c24acee5.55115",
+        "name": "Data",
+        "label": "Data (IPFS CID)",
+        "tooltip": "",
+        "group": "60973256.20713c",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "topicType": "str",
+        "x": 1150,
+        "y": 960,
+        "wires": [
+            [
+                "749f51c4.154fc"
+            ]
+        ]
+    },
+    {
+        "id": "749f51c4.154fc",
+        "type": "function",
+        "z": "c24acee5.55115",
+        "name": "data",
+        "func": "var data = msg.payload\nflow.set('data',data);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1390,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "70ea4da1.941954",
+        "type": "function",
+        "z": "c24acee5.55115",
+        "name": "asset",
+        "func": "var asset = msg.payload\nflow.set('asset',asset);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1390,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4f4e1ede.e3393",
+        "type": "function",
+        "z": "c24acee5.55115",
+        "name": "secretiss",
+        "func": "var secretiss = msg.payload\nflow.set('secretiss', secretiss);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1400,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ba422a8.9537fc",
+        "type": "function",
+        "z": "c24acee5.55115",
+        "name": "count",
+        "func": "var count = msg.payload\nflow.set('count',count);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1390,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e6f94184.3fe5f",
+        "type": "function",
+        "z": "c24acee5.55115",
+        "name": "Setup StellarSDK flow.transaction \\n using generated keypair",
+        "func": "var secretiss = flow.get('secretiss', secretiss)\nmsg.secretiss=secretiss\n\nvar StellarSdk = global.get(\"stellarsdk\");\nvar server = new StellarSdk.Server(\"https://horizon-testnet.stellar.org\");\n\nvar asset = flow.get('asset',asset)\n\n//var op = msg.op\nflow.set('StellarSdk',StellarSdk);\nflow.set('server',server);\n//node.send(msg)\n\n//const pair = StellarSdk.Keypair.random();\n//msg.secret=pair.secret();\n//msg.public=pair.publicKey();\n\n//var secretiss = msg.secret;\nvar pair = StellarSdk.Keypair.fromSecret(secretiss);\nvar assetiss = pair.publicKey()\nflow.set('assetiss',assetiss)\nmsg.public=assetiss\n\nvar secretdist = flow.get('secretdist',secretdist);\nvar sourceKeys = StellarSdk.Keypair.fromSecret(secretdist);\n\n\nvar transaction;\n\n//node.send(msg)\n\nserver\n  .loadAccount(sourceKeys.publicKey())\n\n  .then(function (sourceAccount) {\n    // Start building the transaction.\n    transaction = new StellarSdk.TransactionBuilder(sourceAccount, {\n      fee: StellarSdk.BASE_FEE,\n      networkPassphrase: StellarSdk.Networks.TESTNET,\n    })\n      .addOperation(\n        StellarSdk.Operation.createAccount({\n          destination: msg.public,\n          startingBalance: \"1.5\",\n          source: sourceKeys.publicKey()\n        }),\n      )\n      \n      flow.set('transaction',transaction);\n      node.send(msg)\n  })\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 180,
+        "wires": [
+            [
+                "51452265.044b4c",
+                "8b82cbc0.189d88"
+            ]
+        ]
+    },
+    {
+        "id": "ec5fe2c2.192f1",
+        "type": "ui_text",
+        "z": "c24acee5.55115",
+        "group": "60973256.20713c",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "Success text display",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1340,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "8f30390b.9e0e08",
+        "type": "change",
+        "z": "c24acee5.55115",
+        "name": "Status Update",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Building NFTs",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1060,
+        "y": 500,
+        "wires": [
+            [
+                "ec5fe2c2.192f1"
+            ]
+        ]
+    },
+    {
+        "id": "51452265.044b4c",
+        "type": "function",
+        "z": "c24acee5.55115",
+        "name": "add trust",
+        "func": "var StellarSdk = flow.get(\"StellarSdk\");\nvar server = flow.get('server',server);\nvar secretdist = flow.get('secretdist',secretdist);\nvar asset = flow.get('asset',asset)\nvar assetiss = msg.public\n//var op = msg.op\n//flow.set('StellarSDK',StellarSDK);\n//flow.set('server',server);\nvar count = flow.get('count',count)\n\nif (count<10){\n    count=\"0\"+count\n}\n\n/*if (count<100){\n    count=\"0\"+count\n}\n*/\nflow.set('count',count)\n\nvar sourceKeys = StellarSdk.Keypair.fromSecret(secretdist);\nvar transaction;\n\nserver\n  .loadAccount(sourceKeys.publicKey())\n\n  .then(function (sourceAccount) {\n    // Start building the transaction.\n    transaction = flow.get('transaction',transaction)\n    \n      .addOperation(\n        StellarSdk.Operation.changeTrust({\n          asset: new StellarSdk.Asset(asset+count,assetiss),\n          source: sourceKeys.publicKey()\n        }),\n      )\n      \n     flow.set('transaction',transaction);\n      node.send(msg)\n   // return server.submitTransaction(transaction);\n  })\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 180,
+        "wires": [
+            [
+                "1421f444.b1155c",
+                "e6fb4e45.7764d"
+            ]
+        ]
+    },
+    {
+        "id": "64865776.81c008",
+        "type": "function",
+        "z": "c24acee5.55115",
+        "name": "sign and submit \\n add data+domain \\n lock account",
+        "func": "var StellarSdk = flow.get(\"StellarSdk\");\nvar server = flow.get('server',server);\nvar secretdist = flow.get('secretdist',secretdist);\nvar asset = flow.get('asset',asset)\nvar assetiss = flow.get('assetiss',assetiss)\n//var op = msg.op\n//flow.set('StellarSDK',StellarSDK);\n//flow.set('server',server);\nvar secretiss = msg.secretiss\n\nvar clawback = flow.get('clawback', clawback)\n\nvar sourceKeys = StellarSdk.Keypair.fromSecret(secretiss);\nvar distKeys = StellarSdk.Keypair.fromSecret(secretdist);\nvar dist = distKeys.publicKey()\nvar transaction;\n\nvar data = flow.get('data',data)\nvar domain = flow.get('domain',domain)\n\nserver\n  .loadAccount(dist)\n\n  .then(function (sourceAccount) {\n    // Start building the transaction.\n    transaction = flow.get('transaction',transaction)\n    \n       .addOperation(\n        StellarSdk.Operation.manageData({\n          name: \"ipfs CID (base64)\",\n          value: data,\n          source: sourceKeys.publicKey()\n        }),\n      )\n      \n     \n      .addOperation(\n        StellarSdk.Operation.setOptions({\n          masterWeight: \"0\",\n          homeDomain: domain,\n          setFlags: 0x4,\n          //setFlags: 0x4|\"1\",\n          //setFlags: AuthImmutableFlag\n          //setFlags: StellarSdk.AuthImmutableFlag\n          source: sourceKeys.publicKey()\n        }),\n      )\n      \n      \n    //node.send(msg)\n      // A memo allows you to add your own metadata to a transaction. It's\n      // optional and does not affect how Stellar treats the transaction.\n      .addMemo(StellarSdk.Memo.text('NFT by RedHorizon'))\n      // Wait a maximum of three minutes for the transaction\n      .setTimeout(180)\n      .build();\n     // msg.xdr=transaction.toEnvelope().toXDR('base64')\n    //node.send(msg)\n    // Sign the transaction to prove you are actually the person sending it.\n    transaction.sign(sourceKeys);\n    transaction.sign(distKeys);\n    // And finally, send it off to Stellar!\n    msg.xdr=transaction.toEnvelope().toXDR('base64')\n    msg.payload=\"Submitting to Stellar\"\n    node.send(msg)\n    return server.submitTransaction(transaction);\n  })\n  .then(function (result) {\n    console.log(\"Success! Results:\", result);\n    msg.payload=\"Success\"+\" https://stellar.expert/explorer/testnet/account/\"+sourceKeys.publicKey();\n    node.send(msg);\n  })\n  .catch(function (error) {\n    msg.error=\"Something went wrong! \"+ error;\n    node.send(msg)\n    // If the result is unknown (no response body, timeout etc.) we simply resubmit\n    // already built transaction:\n    // server.submitTransaction(transaction);\n  });",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 420,
+        "wires": [
+            [
+                "ec5fe2c2.192f1",
+                "601c642.f33059c"
+            ]
+        ]
+    },
+    {
+        "id": "1421f444.b1155c",
+        "type": "function",
+        "z": "c24acee5.55115",
+        "name": "send token",
+        "func": "var StellarSdk = flow.get(\"StellarSdk\");\nvar server = flow.get('server',server);\nvar secretiss = msg.secretiss;\nvar asset = flow.get('asset',asset)\nvar assetiss = msg.public\n//var amount = flow.get('amount',amount)\n//var op = msg.op\n//flow.set('StellarSDK',StellarSDK);\n//flow.set('server',server);\nvar count = flow.get('count',count)\n\nvar sourceKeys = StellarSdk.Keypair.fromSecret(secretiss);\nvar transaction;\n\nvar secretdist = flow.get('secretdist',secretdist)\nvar distKeys = StellarSdk.Keypair.fromSecret(secretdist);\nvar dist = distKeys.publicKey()\n\nserver\n  .loadAccount(dist)\n\n  .then(function (sourceAccount) {\n    // Start building the transaction.\n    transaction = flow.get('transaction',transaction)\n    \n      .addOperation(\n        StellarSdk.Operation.payment({\n          destination: dist,\n          // Because Stellar allows transaction in many currencies, you must\n          // specify the asset type. The special \"native\" asset represents Lumens.\n          //asset: StellarSdk.Asset.native(),\n          asset: new StellarSdk.Asset(asset+count,assetiss),\n          amount: \".0000001\",\n          source: sourceKeys.publicKey()\n        }),\n      )\n      \n     flow.set('transaction',transaction);\n      node.send(msg)\n   // return server.submitTransaction(transaction);\n  })\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 180,
+        "wires": [
+            [
+                "b2abbfc7.db2ea",
+                "d775854f.ccc6c8"
+            ]
+        ]
+    },
+    {
+        "id": "d775854f.ccc6c8",
+        "type": "switch",
+        "z": "c24acee5.55115",
+        "name": "count",
+        "property": "count",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "00",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "00",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 730,
+        "y": 280,
+        "wires": [
+            [
+                "6a210153.80028",
+                "107cf14e.b06d7f"
+            ],
+            [
+                "db48fe07817c58fe"
+            ]
+        ]
+    },
+    {
+        "id": "6a210153.80028",
+        "type": "function",
+        "z": "c24acee5.55115",
+        "name": "count-1",
+        "func": "var count=flow.get('count',count)\ncount= count-1\n\nflow.set('count',count)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1100,
+        "y": 340,
+        "wires": [
+            [
+                "51452265.044b4c",
+                "e9cc65bb.f02e28"
+            ]
+        ]
+    },
+    {
+        "id": "e1d8b434.7ff528",
+        "type": "ui_text_input",
+        "z": "c24acee5.55115",
+        "name": "domain",
+        "label": "Home domain (no https://www.)",
+        "tooltip": "",
+        "group": "60973256.20713c",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "topicType": "str",
+        "x": 1160,
+        "y": 1000,
+        "wires": [
+            [
+                "d5f836e6.3ac928"
+            ]
+        ]
+    },
+    {
+        "id": "d5f836e6.3ac928",
+        "type": "function",
+        "z": "c24acee5.55115",
+        "name": "domain",
+        "func": "var domain = msg.payload\nflow.set('domain',domain);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1400,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e9cc65bb.f02e28",
+        "type": "change",
+        "z": "c24acee5.55115",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "count",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1320,
+        "y": 440,
+        "wires": [
+            [
+                "ec5fe2c2.192f1"
+            ]
+        ]
+    },
+    {
+        "id": "ae1fb466.09b438",
+        "type": "switch",
+        "z": "c24acee5.55115",
+        "name": "Network Switch",
+        "property": "network",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "test",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "public",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 280,
+        "y": 380,
+        "wires": [
+            [
+                "e6f94184.3fe5f"
+            ],
+            [
+                "6653b8d.1f9f648"
+            ]
+        ]
+    },
+    {
+        "id": "6653b8d.1f9f648",
+        "type": "function",
+        "z": "c24acee5.55115",
+        "name": "Setup StellarSDK flow.transaction \\n fund new keypair",
+        "func": "var secretiss = flow.get('secretiss', secretiss)\nmsg.secretiss = secretiss\n\nvar StellarSdk = global.get(\"stellarsdk\");\nvar server = new StellarSdk.Server(\"https://horizon.stellar.org\");\n\nvar asset = flow.get('asset', asset)\n\n//var op = msg.op\nflow.set('StellarSdk', StellarSdk);\nflow.set('server', server);\n//node.send(msg)\n\n//const pair = StellarSdk.Keypair.random();\n//msg.secret=pair.secret();\n//msg.public=pair.publicKey();\n\n//var secretiss = msg.secret;\nvar pair = StellarSdk.Keypair.fromSecret(secretiss);\nvar assetiss = pair.publicKey()\nflow.set('assetiss', assetiss)\nmsg.public = assetiss\n\nvar secretdist = flow.get('secretdist', secretdist);\nvar sourceKeys = StellarSdk.Keypair.fromSecret(secretdist);\n\n\nvar transaction;\n\n//node.send(msg)\n\nserver\n  .loadAccount(sourceKeys.publicKey())\n\n  .then(function (sourceAccount) {\n    // Start building the transaction.\n    transaction = new StellarSdk.TransactionBuilder(sourceAccount, {\n      fee: StellarSdk.BASE_FEE,\n      networkPassphrase: StellarSdk.Networks.PUBLIC,\n    })\n      .addOperation(\n        StellarSdk.Operation.createAccount({\n          destination: msg.public,\n          startingBalance: \"1.5\",\n          source: sourceKeys.publicKey()\n        }),\n      )\n\n    flow.set('transaction', transaction);\n    node.send(msg)\n  })\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 480,
+        "wires": [
+            [
+                "51452265.044b4c",
+                "e22e931e.cc126"
+            ]
+        ]
+    },
+    {
+        "id": "801d6251.4f55a",
+        "type": "ui_dropdown",
+        "z": "c24acee5.55115",
+        "name": "",
+        "label": "Network",
+        "tooltip": "",
+        "place": "Test",
+        "group": "60973256.20713c",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Test",
+                "value": "test",
+                "type": "str"
+            },
+            {
+                "label": "Public",
+                "value": "public",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1160,
+        "y": 1120,
+        "wires": [
+            [
+                "3681bd62.bccd82"
+            ]
+        ]
+    },
+    {
+        "id": "3681bd62.bccd82",
+        "type": "function",
+        "z": "c24acee5.55115",
+        "name": "network",
+        "func": "var network = msg.payload\nflow.set('network',network);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is deployed.\nvar network = \"test\"\nflow.set('network',network);",
+        "finalize": "",
+        "x": 1420,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "107cf14e.b06d7f",
+        "type": "debug",
+        "z": "c24acee5.55115",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1320,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "601c642.f33059c",
+        "type": "debug",
+        "z": "c24acee5.55115",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1310,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "1b35241b.74fb2c",
+        "type": "comment",
+        "z": "c24acee5.55115",
+        "name": "Bug - Cannot create more than 31 \\n Makes 1 more than requested - #00",
+        "info": "",
+        "x": 1180,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "b2abbfc7.db2ea",
+        "type": "debug",
+        "z": "c24acee5.55115",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "e6fb4e45.7764d",
+        "type": "debug",
+        "z": "c24acee5.55115",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "8b82cbc0.189d88",
+        "type": "debug",
+        "z": "c24acee5.55115",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "e22e931e.cc126",
+        "type": "debug",
+        "z": "c24acee5.55115",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "3f3109f8a017b3b9",
+        "type": "ui_switch",
+        "z": "c24acee5.55115",
+        "name": "",
+        "label": "Clawback",
+        "tooltip": "",
+        "group": "60973256.20713c",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 1180,
+        "y": 1080,
+        "wires": [
+            [
+                "38379f5ac9cc97e8"
+            ]
+        ]
+    },
+    {
+        "id": "38379f5ac9cc97e8",
+        "type": "function",
+        "z": "c24acee5.55115",
+        "name": "clawback",
+        "func": "var clawback = msg.payload\nflow.set('clawback', clawback);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nvar clawback = false\nflow.set('clawback', clawback);",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "91f2bebbde1f6764",
+        "type": "debug",
+        "z": "c24acee5.55115",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 650,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "275a8b775bd9c26d",
+        "type": "function",
+        "z": "c24acee5.55115",
+        "name": "return keypair",
+        "func": "const fetch = global.get(\"nodefetch\");\n\nvar StellarSdk = global.get(\"stellarsdk\");\n// create a completely new and unique pair of keys\n// see more about KeyPair objects: https://stellar.github.io/js-stellar-sdk/Keypair.html\nconst pair = StellarSdk.Keypair.random();\n\n//console.log(pair.secret());\nmsg.payload = \"Pair secret: \" + pair.secret()\nnode.send(msg)\n// SAV76USXIJOBMEQXPANUOQM6F5LIOTLPDIDVRJBFFE2MDJXG24TAPUU7\n//console.log(pair.publicKey());\nmsg.payload = \"Pair publickey: \" + pair.publicKey()\nnode.send(msg)\n// GCFXHS4GXL6BVUCXBWXGTITROWLVYXQKQLF4YH5O5JT3YZXCYPAFBJZB\n/*\nasync function main() {\n  try {\n    const response = await fetch(\n      `https://friendbot.stellar.org?addr=${encodeURIComponent(\n        pair.publicKey(),\n      )}`,\n    );\n    const responseJSON = await response.json();\n    console.log(\"SUCCESS! You have a new account :)\\n\", responseJSON);\n  } catch (e) {\n    console.log(\"ERROR!\", e);\n  }\n\n\n}\nmain()\n*/\nmsg.payload=pair.secret();\n\nmsg.topic=pair.publicKey();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 800,
+        "wires": [
+            [
+                "91f2bebbde1f6764",
+                "29d031f7d017377c",
+                "b63d841f07ae6a77",
+                "53f42df0e1983313",
+                "cbbe097b013c8205",
+                "4f4e1ede.e3393"
+            ]
+        ]
+    },
+    {
+        "id": "564a4ed330fd97cc",
+        "type": "ui_button",
+        "z": "c24acee5.55115",
+        "name": "",
+        "group": "f642514e534b97aa",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "generate keypair",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 160,
+        "y": 800,
+        "wires": [
+            [
+                "275a8b775bd9c26d"
+            ]
+        ]
+    },
+    {
+        "id": "29d031f7d017377c",
+        "type": "ui_text",
+        "z": "c24acee5.55115",
+        "group": "f642514e534b97aa",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Public",
+        "label": "Public",
+        "format": "{{msg.topic}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 650,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "b63d841f07ae6a77",
+        "type": "ui_text",
+        "z": "c24acee5.55115",
+        "group": "f642514e534b97aa",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Secret",
+        "label": "Secret",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 650,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "6d221c90fa667d9d",
+        "type": "comment",
+        "z": "c24acee5.55115",
+        "name": "Generate Keypair",
+        "info": "",
+        "x": 340,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "6ee6040a6a4cd810",
+        "type": "ui_text",
+        "z": "c24acee5.55115",
+        "group": "f642514e534b97aa",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Success text display",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 700,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "53f42df0e1983313",
+        "type": "change",
+        "z": "c24acee5.55115",
+        "name": "Status Update",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Success!",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 900,
+        "wires": [
+            [
+                "6ee6040a6a4cd810"
+            ]
+        ]
+    },
+    {
+        "id": "5697b2e1855d8fb5",
+        "type": "ui_text_input",
+        "z": "c24acee5.55115",
+        "name": "Secret Key - Origin",
+        "label": "Secret Key - Origin",
+        "tooltip": "",
+        "group": "60973256.20713c",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "topicType": "str",
+        "x": 1190,
+        "y": 840,
+        "wires": [
+            [
+                "b9b243becb2ba111"
+            ]
+        ]
+    },
+    {
+        "id": "b9b243becb2ba111",
+        "type": "function",
+        "z": "c24acee5.55115",
+        "name": "secretdist",
+        "func": "var secretdist = msg.payload\nflow.set('secretdist',secretdist);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1400,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cbbe097b013c8205",
+        "type": "ui_text",
+        "z": "c24acee5.55115",
+        "group": "60973256.20713c",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Issuer Secret",
+        "label": "Issuer Secret",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1150,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "db48fe07817c58fe",
+        "type": "switch",
+        "z": "c24acee5.55115",
+        "name": "clawback",
+        "property": "clawback",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 800,
+        "y": 380,
+        "wires": [
+            [
+                "64865776.81c008"
+            ],
+            [
+                "29c7e2d7f652e864"
+            ]
+        ]
+    },
+    {
+        "id": "29c7e2d7f652e864",
+        "type": "function",
+        "z": "c24acee5.55115",
+        "name": "sign and submit \\n add data+domain \\n clawback",
+        "func": "var StellarSdk = flow.get(\"StellarSdk\");\nvar server = flow.get('server',server);\nvar secretdist = flow.get('secretdist',secretdist);\nvar asset = flow.get('asset',asset)\nvar assetiss = flow.get('assetiss',assetiss)\n//var op = msg.op\n//flow.set('StellarSDK',StellarSDK);\n//flow.set('server',server);\nvar secretiss = msg.secretiss\n\nvar clawback = flow.get('clawback', clawback)\n\nvar sourceKeys = StellarSdk.Keypair.fromSecret(secretiss);\nvar distKeys = StellarSdk.Keypair.fromSecret(secretdist);\nvar dist = distKeys.publicKey()\nvar transaction;\n\nvar data = flow.get('data',data)\nvar domain = flow.get('domain',domain)\n\nserver\n  .loadAccount(dist)\n\n  .then(function (sourceAccount) {\n    // Start building the transaction.\n    transaction = flow.get('transaction',transaction)\n    \n       .addOperation(\n        StellarSdk.Operation.manageData({\n          name: \"ipfshash\",\n          value: data,\n          source: sourceKeys.publicKey()\n        }),\n      )\n      \n      /*\n      .addOperation(\n        StellarSdk.Operation.setOptions({\n          masterWeight: \"0\",\n          homeDomain: domain,\n          setFlags: 0x4,\n          //setFlags: 0x4|\"1\",\n          //setFlags: AuthImmutableFlag\n          //setFlags: StellarSdk.AuthImmutableFlag\n          source: sourceKeys.publicKey()\n        }),\n      )\n      */\n      \n        .addOperation(\n          StellarSdk.Operation.setOptions({\n            //masterWeight: \"0\",\n            homeDomain: domain,\n            //setFlags: StellarSdk.AuthClawbackEnabledFlag,\n            //setFlags: AuthClawbackEnabledFlag,\n            setFlags: StellarSdk.AuthRevocableFlag | StellarSdk.AuthClawbackEnabledFlag,\n            //setFlags: 0x2,\n            //setFlags: 0x8,\n            //setFlags: AuthImmutableFlag\n            //setFlags: StellarSdk.AuthImmutableFlag\n            source: sourceKeys.publicKey()\n          }),\n        )\n      \n      \n    //node.send(msg)\n      // A memo allows you to add your own metadata to a transaction. It's\n      // optional and does not affect how Stellar treats the transaction.\n      .addMemo(StellarSdk.Memo.text('NFT by RedHorizon'))\n      // Wait a maximum of three minutes for the transaction\n      .setTimeout(180)\n      .build();\n     // msg.xdr=transaction.toEnvelope().toXDR('base64')\n    //node.send(msg)\n    // Sign the transaction to prove you are actually the person sending it.\n    transaction.sign(sourceKeys);\n    transaction.sign(distKeys);\n    // And finally, send it off to Stellar!\n    msg.xdr=transaction.toEnvelope().toXDR('base64')\n    msg.payload=\"Submitting to Stellar\"\n    node.send(msg)\n    return server.submitTransaction(transaction);\n  })\n  .then(function (result) {\n    console.log(\"Success! Results:\", result);\n    msg.payload=\"Success\"+\" https://stellar.expert/explorer/testnet/account/\"+sourceKeys.publicKey();\n    node.send(msg);\n  })\n  .catch(function (error) {\n    msg.error=\"Something went wrong! \"+ error;\n    node.send(msg)\n    // If the result is unknown (no response body, timeout etc.) we simply resubmit\n    // already built transaction:\n    // server.submitTransaction(transaction);\n  });",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 660,
+        "wires": [
+            [
+                "ec5fe2c2.192f1",
+                "d26f7a407055e6c6"
+            ]
+        ]
+    },
+    {
+        "id": "d26f7a407055e6c6",
+        "type": "debug",
+        "z": "c24acee5.55115",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1170,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "9819f41.7ab5308",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "CREATE",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "CREATE TABLE Members(Member INTEGER, NFC TEXT, Name TEXT, PublicKey NUMERIC)",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "2d5094b7.c1f91c"
+            ]
+        ]
+    },
+    {
+        "id": "d4bbaf4e.2603a",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "INSERT",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "INSERT INTO TeleUsersTest(id, public, private) values(358, \"WZAH51\", \"lK257\")",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 140,
+        "wires": [
+            [
+                "7bc75688.10d5f8"
+            ]
+        ]
+    },
+    {
+        "id": "b4b746d3.657998",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "SELECT",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM Loans",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 180,
+        "wires": [
+            [
+                "7bc75688.10d5f8"
+            ]
+        ]
+    },
+    {
+        "id": "8d1a9bda.9f6a38",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "DELETE",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "DELETE from Members",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 220,
+        "wires": [
+            [
+                "7bc75688.10d5f8"
+            ]
+        ]
+    },
+    {
+        "id": "e4aef7ba.21bd88",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "DROP",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "DROP TABLE Loans",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 260,
+        "wires": [
+            [
+                "7bc75688.10d5f8"
+            ]
+        ]
+    },
+    {
+        "id": "22add297.10664e",
+        "type": "debug",
+        "z": "fece67b7.0fd7b8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "7399496b.c08548",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "SELECT 357",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM TeleUsersTest WHERE id=357",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 460,
+        "wires": [
+            [
+                "7bc75688.10d5f8"
+            ]
+        ]
+    },
+    {
+        "id": "a0cc81e4.4f98b",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "user 358",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "358",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "356",
+        "payloadType": "num",
+        "x": 120,
+        "y": 540,
+        "wires": [
+            [
+                "ce55b912.a85468"
+            ]
+        ]
+    },
+    {
+        "id": "e7a24e6a.083c7",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "SELECT user",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM TeleUsersTest WHERE id=user",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 500,
+        "wires": [
+            [
+                "2409c21c.d8398e"
+            ]
+        ]
+    },
+    {
+        "id": "ce55b912.a85468",
+        "type": "function",
+        "z": "fece67b7.0fd7b8",
+        "name": "",
+        "func": "var user = msg.payload\nflow.set('user',user)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 300,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2409c21c.d8398e",
+        "type": "function",
+        "z": "fece67b7.0fd7b8",
+        "name": "",
+        "func": "var user = flow.get('user',user)\nmsg.topic = \"SELECT * FROM TeleUsersTest WHERE id=\"+user\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 300,
+        "y": 500,
+        "wires": [
+            [
+                "7bc75688.10d5f8"
+            ]
+        ]
+    },
+    {
+        "id": "9c9d8516.c3cac8",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "DELETE",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "DELETE from TeleUsers",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 580,
+        "wires": [
+            [
+                "2d5094b7.c1f91c"
+            ]
+        ]
+    },
+    {
+        "id": "afb195fe.451118",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "SELECT",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM Loans",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 620,
+        "wires": [
+            [
+                "2d5094b7.c1f91c"
+            ]
+        ]
+    },
+    {
+        "id": "a236af90.85c92",
+        "type": "inject",
+        "z": "fece67b7.0fd7b8",
+        "name": "SELECT LAST",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM Members ORDER BY Member DESC LIMIT 1",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 360,
+        "wires": [
+            [
+                "7bc75688.10d5f8"
+            ]
+        ]
+    },
+    {
+        "id": "7bc75688.10d5f8",
+        "type": "sqlite",
+        "z": "fece67b7.0fd7b8",
+        "mydb": "2525d4df1782b878",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Members",
+        "x": 600,
+        "y": 260,
+        "wires": [
+            [
+                "22add297.10664e"
+            ]
+        ]
+    },
+    {
+        "id": "2d5094b7.c1f91c",
+        "type": "sqlite",
+        "z": "fece67b7.0fd7b8",
+        "mydb": "2525d4df1782b878",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Members",
+        "x": 580,
+        "y": 540,
+        "wires": [
+            [
+                "22add297.10664e"
+            ]
+        ]
+    },
+    {
+        "id": "6160564216bcd75d",
+        "type": "mqtt in",
+        "z": "134203a1625ebddf",
+        "name": "",
+        "topic": "#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9b2d30969434d362",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 160,
+        "wires": [
+            [
+                "bedf5eb8851ddc70"
+            ]
+        ]
+    },
+    {
+        "id": "339e10dd9b568a10",
+        "type": "mqtt in",
+        "z": "134203a1625ebddf",
+        "name": "",
+        "topic": "d/e32_06/NFC_UID",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9b2d30969434d362",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 220,
+        "wires": [
+            [
+                "8f61a2352a2516c3"
+            ]
+        ]
+    },
+    {
+        "id": "56590f557deff169",
+        "type": "mqtt in",
+        "z": "134203a1625ebddf",
+        "name": "",
+        "topic": "d/e32_06/NFC_Payload",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9b2d30969434d362",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 260,
+        "y": 280,
+        "wires": [
+            [
+                "e2efb5e85a560210"
+            ]
+        ]
+    },
+    {
+        "id": "bedf5eb8851ddc70",
+        "type": "debug",
+        "z": "134203a1625ebddf",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "8f61a2352a2516c3",
+        "type": "debug",
+        "z": "134203a1625ebddf",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "e2efb5e85a560210",
+        "type": "debug",
+        "z": "134203a1625ebddf",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "08465655564d13d6",
+        "type": "mqtt out",
+        "z": "134203a1625ebddf",
+        "name": "",
+        "topic": "test",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9b2d30969434d362",
+        "x": 470,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "a4308d8723b4e063",
+        "type": "inject",
+        "z": "134203a1625ebddf",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 280,
+        "y": 380,
+        "wires": [
+            [
+                "08465655564d13d6",
+                "54be8db2b82e0136"
+            ]
+        ]
+    },
+    {
+        "id": "54be8db2b82e0136",
+        "type": "debug",
+        "z": "134203a1625ebddf",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "b8ab8d4a9ae3f454",
+        "type": "mqtt in",
+        "z": "134203a1625ebddf",
+        "name": "",
+        "topic": "d/e32_006/nfc_001",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9b2d30969434d362",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 270,
+        "y": 340,
+        "wires": [
+            [
+                "8eda0f0bb8fc9b05"
+            ]
+        ]
+    },
+    {
+        "id": "8eda0f0bb8fc9b05",
+        "type": "debug",
+        "z": "134203a1625ebddf",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "83645f1a61668799",
+        "type": "ui_text_input",
+        "z": "07dd62fea7f5774f",
+        "name": "Asset Code",
+        "label": "Asset Code",
+        "tooltip": "",
+        "group": "bdc3fa5511cdc1e8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "topicType": "str",
+        "x": 350,
+        "y": 80,
+        "wires": [
+            [
+                "0deb6203bbbaddab"
+            ]
+        ]
+    },
+    {
+        "id": "32bdabb9277cce20",
+        "type": "ui_text",
+        "z": "07dd62fea7f5774f",
+        "group": "9a269eae5b579a02",
+        "order": 1,
+        "width": 6,
+        "height": 8,
+        "name": "TOML",
+        "label": "TOML",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 810,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "0deb6203bbbaddab",
+        "type": "function",
+        "z": "07dd62fea7f5774f",
+        "name": "code",
+        "func": "var code = msg.payload\nflow.set('code',code);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 530,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "79484960ea94a38b",
+        "type": "ui_button",
+        "z": "07dd62fea7f5774f",
+        "name": "Generate TOML",
+        "group": "bdc3fa5511cdc1e8",
+        "order": 10,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Generate TOML",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 160,
+        "y": 600,
+        "wires": [
+            [
+                "7960f2c5314e83d6"
+            ]
+        ]
+    },
+    {
+        "id": "deb59ee06c041b88",
+        "type": "function",
+        "z": "07dd62fea7f5774f",
+        "name": "00",
+        "func": "var code = flow.get('code',code);\nvar issuer = flow.get('issuer',issuer);\nvar decimals = flow.get('decimals',decimals);\nvar anchored = flow.get('anchored',anchored);\nvar name = flow.get('name',name);\nvar desc = flow.get('desc',desc);\nvar conditions = flow.get('conditions',conditions);\nvar image = flow.get('image',image);\nvar count = flow.get('count',count);\n\nmsg.payload = msg.payload + \"<br>[[CURRENCIES]]<br>\" + 'code=\"' + code + \"0\" + count + '\"<br>' + 'issuer=\"' + issuer + '\"<br>' + 'display_decimals=' + decimals + '<br>' + \"is_asset_anchored= true\" + '<br>anchor_asset_type = \"NFT\"' + '<br>' + 'name=\"' + name + ' #'+count+'\"<br>' + 'desc=\"' + desc + ' MINT#' + count + '\"<br>' + 'conditions=\"' + conditions + '\"<br>' + 'image=\"' + image + '\"'\n//msg.payload=msg.payload+'code=\"'+code+'\"'+'issuer=\"'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 600,
+        "wires": [
+            [
+                "32bdabb9277cce20",
+                "fe97edfde856a93b"
+            ]
+        ]
+    },
+    {
+        "id": "9271f0f430dfccab",
+        "type": "ui_text_input",
+        "z": "07dd62fea7f5774f",
+        "name": "issuer",
+        "label": "issuer",
+        "tooltip": "",
+        "group": "bdc3fa5511cdc1e8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "topicType": "str",
+        "x": 330,
+        "y": 120,
+        "wires": [
+            [
+                "f8aab095de664856"
+            ]
+        ]
+    },
+    {
+        "id": "f8aab095de664856",
+        "type": "function",
+        "z": "07dd62fea7f5774f",
+        "name": "issuer",
+        "func": "var issuer = msg.payload\nflow.set('issuer',issuer);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 530,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "de9304aa114c0b1d",
+        "type": "ui_text_input",
+        "z": "07dd62fea7f5774f",
+        "name": "decimals",
+        "label": "decimals",
+        "tooltip": "",
+        "group": "bdc3fa5511cdc1e8",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "topicType": "str",
+        "x": 340,
+        "y": 160,
+        "wires": [
+            [
+                "9b1dbe72603cd25e"
+            ]
+        ]
+    },
+    {
+        "id": "9b1dbe72603cd25e",
+        "type": "function",
+        "z": "07dd62fea7f5774f",
+        "name": "decimals",
+        "func": "var decimals = msg.payload\nflow.set('decimals',decimals);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 540,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fe97edfde856a93b",
+        "type": "debug",
+        "z": "07dd62fea7f5774f",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "b088c65eb1909461",
+        "type": "ui_text_input",
+        "z": "07dd62fea7f5774f",
+        "name": "name",
+        "label": "name",
+        "tooltip": "",
+        "group": "bdc3fa5511cdc1e8",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "topicType": "str",
+        "x": 330,
+        "y": 240,
+        "wires": [
+            [
+                "46a65d47228b6b17"
+            ]
+        ]
+    },
+    {
+        "id": "46a65d47228b6b17",
+        "type": "function",
+        "z": "07dd62fea7f5774f",
+        "name": "issuer",
+        "func": "var name = msg.payload\nflow.set('name',name);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 530,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "61dc9043fa13ab63",
+        "type": "ui_text_input",
+        "z": "07dd62fea7f5774f",
+        "name": "desc",
+        "label": "desc",
+        "tooltip": "",
+        "group": "bdc3fa5511cdc1e8",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "topicType": "str",
+        "x": 330,
+        "y": 280,
+        "wires": [
+            [
+                "760ff9cb2c65b8d4"
+            ]
+        ]
+    },
+    {
+        "id": "760ff9cb2c65b8d4",
+        "type": "function",
+        "z": "07dd62fea7f5774f",
+        "name": "decimals",
+        "func": "var desc = msg.payload\nflow.set('desc',desc);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 540,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "86d76df2f4fccded",
+        "type": "ui_text_input",
+        "z": "07dd62fea7f5774f",
+        "name": "conditions",
+        "label": "conditions",
+        "tooltip": "",
+        "group": "bdc3fa5511cdc1e8",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "topicType": "str",
+        "x": 340,
+        "y": 320,
+        "wires": [
+            [
+                "67410d7a1ca9984c"
+            ]
+        ]
+    },
+    {
+        "id": "67410d7a1ca9984c",
+        "type": "function",
+        "z": "07dd62fea7f5774f",
+        "name": "issuer",
+        "func": "var conditions = msg.payload\nflow.set('conditions',conditions);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 530,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8a48e52ae0a5ba8b",
+        "type": "ui_text_input",
+        "z": "07dd62fea7f5774f",
+        "name": "image",
+        "label": "image",
+        "tooltip": "",
+        "group": "bdc3fa5511cdc1e8",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "topicType": "str",
+        "x": 330,
+        "y": 360,
+        "wires": [
+            [
+                "e1dc5db1816e248a"
+            ]
+        ]
+    },
+    {
+        "id": "e1dc5db1816e248a",
+        "type": "function",
+        "z": "07dd62fea7f5774f",
+        "name": "decimals",
+        "func": "var image = msg.payload\nflow.set('image',image);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 540,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "832d6ac24435e8cf",
+        "type": "ui_text_input",
+        "z": "07dd62fea7f5774f",
+        "name": "quantity",
+        "label": "quantity",
+        "tooltip": "",
+        "group": "bdc3fa5511cdc1e8",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": "300",
+        "topic": "",
+        "topicType": "str",
+        "x": 340,
+        "y": 400,
+        "wires": [
+            [
+                "3a6f270deb77a7cf"
+            ]
+        ]
+    },
+    {
+        "id": "3a6f270deb77a7cf",
+        "type": "function",
+        "z": "07dd62fea7f5774f",
+        "name": "quantity",
+        "func": "var quantity = msg.payload\nflow.set('quantity',quantity);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 540,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fde5e6737b551d11",
+        "type": "function",
+        "z": "07dd62fea7f5774f",
+        "name": "",
+        "func": "var code = flow.get('code',code);\nvar issuer = flow.get('issuer',issuer);\nvar decimals = flow.get('decimals',decimals);\nvar anchored = flow.get('anchored',anchored);\nvar name = flow.get('name',name);\nvar desc = flow.get('desc',desc);\nvar conditions = flow.get('conditions',conditions);\nvar image = flow.get('image',image);\n\nmsg.payload=\"[[CURRENCIES]]\\n\"+'code=\"'+code+'\"\\n'+'issuer=\"'+issuer+'\"\\n'+'decimals='+decimals+'\\n'+\"anchored=\"+anchored+'\\n'+'name=\"'+name+'\"\\n'+'desc=\"'+desc+'\"\\n'+'conditions=\"'+conditions+'\"\\n'+'image=\"'+image+'\"'\n//msg.payload=msg.payload+'code=\"'+code+'\"'+'issuer=\"'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 640,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b0974bc5b407673f",
+        "type": "switch",
+        "z": "07dd62fea7f5774f",
+        "name": "count",
+        "property": "count",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 470,
+        "y": 660,
+        "wires": [
+            [
+                "deb59ee06c041b88"
+            ],
+            [
+                "a59352f3cf2420e5"
+            ]
+        ]
+    },
+    {
+        "id": "65687bc710ae1fd3",
+        "type": "function",
+        "z": "07dd62fea7f5774f",
+        "name": "count-1",
+        "func": "var count=flow.get('count',count)\ncount= count-1\n\nflow.set('count',count)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 520,
+        "y": 780,
+        "wires": [
+            [
+                "b0974bc5b407673f"
+            ]
+        ]
+    },
+    {
+        "id": "7960f2c5314e83d6",
+        "type": "function",
+        "z": "07dd62fea7f5774f",
+        "name": "setup count",
+        "func": "var count = flow.get('quantity',count);\nflow.set('count',count);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 340,
+        "y": 600,
+        "wires": [
+            [
+                "b0974bc5b407673f"
+            ]
+        ]
+    },
+    {
+        "id": "a59352f3cf2420e5",
+        "type": "function",
+        "z": "07dd62fea7f5774f",
+        "name": "format",
+        "func": "var code = flow.get('code',code);\nvar issuer = flow.get('issuer',issuer);\nvar decimals = flow.get('decimals',decimals);\nvar anchored = flow.get('anchored',anchored);\nvar name = flow.get('name',name);\nvar desc = flow.get('desc',desc);\nvar conditions = flow.get('conditions',conditions);\nvar image = flow.get('image',image);\nvar count = flow.get('count',count);\n\nif(count<10){\n    msg.payload = msg.payload + \"<br>[[CURRENCIES]]<br>\" + 'code=\"' + code + \"0\" + count + '\"<br>' + 'issuer=\"' + issuer + '\"<br>' + 'display_decimals=' + decimals + '<br>' + \"is_asset_anchored= true\" + '<br>anchor_asset_type = \"NFT\"' + '<br>' + 'name=\"' + name + ' #'+count+'\"<br>' + 'desc=\"' + desc + ' MINT#' + count + '\"<br>' + 'conditions=\"' + conditions + '\"<br>' + 'image=\"' + image + '\"'\n} else{\n    msg.payload = msg.payload + \"<br>[[CURRENCIES]]<br>\" + 'code=\"' + code + count + '\"<br>' + 'issuer=\"' + issuer + '\"<br>' + 'display_decimals=' + decimals + '<br>' + \"is_asset_anchored= true\" + '<br>anchor_asset_type = \"NFT\"' + '<br>' + 'name=\"' + name + '\"<br>' + 'desc=\"' + desc + ' MINT#' + count + '\"<br>' + 'conditions=\"' + conditions +'\"<br>'+'image=\"'+image+'\"'\n}\n\n//msg.payload=msg.payload+'code=\"'+code+'\"'+'issuer=\"'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 680,
+        "wires": [
+            [
+                "65687bc710ae1fd3"
+            ]
+        ]
+    }
+]
