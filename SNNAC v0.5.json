@@ -329,7 +329,7 @@
     {
         "id": "f642514e534b97aa",
         "type": "ui_group",
-        "name": "Account",
+        "name": "Issuer Account",
         "tab": "73449d79.7a6494",
         "order": 2,
         "disp": true,
@@ -373,102 +373,6 @@
         "order": 4,
         "width": 1,
         "height": 1
-    },
-    {
-        "id": "cac7b4e38c0c2177",
-        "type": "ui_base",
-        "theme": {
-            "name": "theme-light",
-            "lightTheme": {
-                "default": "#0094CE",
-                "baseColor": "#0094CE",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
-                "reset": false
-            },
-            "darkTheme": {
-                "default": "#097479",
-                "baseColor": "#097479",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
-            },
-            "customTheme": {
-                "name": "Untitled Theme 1",
-                "default": "#4B7930",
-                "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-            },
-            "themeState": {
-                "base-color": {
-                    "default": "#0094CE",
-                    "value": "#0094CE",
-                    "edited": false
-                },
-                "page-titlebar-backgroundColor": {
-                    "value": "#0094CE",
-                    "edited": false
-                },
-                "page-backgroundColor": {
-                    "value": "#fafafa",
-                    "edited": false
-                },
-                "page-sidebar-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-textColor": {
-                    "value": "#1bbfff",
-                    "edited": false
-                },
-                "group-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "widget-textColor": {
-                    "value": "#111111",
-                    "edited": false
-                },
-                "widget-backgroundColor": {
-                    "value": "#0094ce",
-                    "edited": false
-                },
-                "widget-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "base-font": {
-                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-                }
-            },
-            "angularTheme": {
-                "primary": "indigo",
-                "accents": "blue",
-                "warn": "red",
-                "background": "grey"
-            }
-        },
-        "site": {
-            "name": "Stellar UI",
-            "hideToolbar": "false",
-            "allowSwipe": "false",
-            "lockMenu": "false",
-            "allowTempTheme": "true",
-            "dateFormat": "DD/MM/YYYY",
-            "sizes": {
-                "sx": 48,
-                "sy": 48,
-                "gx": 6,
-                "gy": 6,
-                "cx": 6,
-                "cy": 6,
-                "px": 0,
-                "py": 2
-            }
-        }
     },
     {
         "id": "c36016604a2f5e77",
@@ -1121,7 +1025,7 @@
         "type": "function",
         "z": "371740748292f1c0",
         "name": "format output",
-        "func": "var public2 = flow.get('public2', public2)\nvar nftname = flow.get('nftname', nftname)\nvar nftiss = flow.get('nftiss', nftiss)\nvar network = flow.get('network', network)\n\nmsg.public=public2\nmsg.nftname = nftname\nmsg.nftiss = nftiss\nmsg.network = network\n\nmsg.balance=\"Submitting to Stellar\"\n\nmsg.topic = \"Public Key:\\n\" + public2 + \"\\nNFT:<br>\" + nftname + \"\\n\" + \"<br>Issuer: \\n \" + nftiss +\"<br>Network: \"+network+\"\\n\"\nreturn msg;",
+        "func": "var public2 = flow.get('public2', public2)\nvar nftname = flow.get('nftname', nftname)\nvar nftiss = flow.get('nftiss', nftiss)\nvar network = flow.get('network', network)\n\nmsg.public=public2\nmsg.nftname = nftname\nmsg.nftiss = nftiss\nmsg.network = network\n\nmsg.balance=\"Submitting to Stellar\"\n\nmsg.topic = \"Public Key:\\n\" + public2 + \"<br>NFT:<br>\" + nftname + \"\\n\" + \"<br>Issuer: \\n \" + nftiss +\"<br>Network: \"+network+\"\\n\"\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1421,8 +1325,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 710,
-        "y": 1400,
+        "x": 790,
+        "y": 1460,
         "wires": []
     },
     {
@@ -1721,8 +1625,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 730,
-        "y": 1340,
+        "x": 810,
+        "y": 1400,
         "wires": [
             [
                 "6065cf4fd4ef0e91",
@@ -1759,8 +1663,8 @@
         "y": 1340,
         "wires": [
             [
-                "0c7cd0574455be59",
-                "2da4a323547f8afc"
+                "2da4a323547f8afc",
+                "d67f8b54ed2387b1"
             ]
         ]
     },
@@ -1992,6 +1896,98 @@
         "wires": [
             [
                 "4ac4ff743af47e80"
+            ]
+        ]
+    },
+    {
+        "id": "d67f8b54ed2387b1",
+        "type": "switch",
+        "z": "371740748292f1c0",
+        "name": "null check",
+        "property": "payload[0].Name",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "null"
+            },
+            {
+                "t": "nnull"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 720,
+        "y": 1340,
+        "wires": [
+            [
+                "359d5c705169041f"
+            ],
+            [
+                "0c7cd0574455be59"
+            ]
+        ]
+    },
+    {
+        "id": "359d5c705169041f",
+        "type": "change",
+        "z": "371740748292f1c0",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "NFC UID NOT IN DB",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1020,
+        "y": 1480,
+        "wires": [
+            [
+                "4ac4ff743af47e80"
+            ]
+        ]
+    },
+    {
+        "id": "c8c7f99425922aa9",
+        "type": "inject",
+        "z": "371740748292f1c0",
+        "name": "clear",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 90,
+        "y": 380,
+        "wires": [
+            [
+                "c5f6cbc7bcb88217",
+                "4824c08950367102",
+                "7f70e081f2c4d343",
+                "d9dd78ce93647ebf",
+                "320a63c8fcfe6481",
+                "53bf767a4dc4c5de",
+                "e78783d064dc0f6d",
+                "11a9f24f86e6560b"
             ]
         ]
     },
@@ -3901,7 +3897,7 @@
         "wires": [
             [
                 "8f30390b.9e0e08",
-                "ae1fb466.09b438"
+                "0c15b4a613dc52b1"
             ]
         ]
     },
@@ -4784,8 +4780,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 800,
-        "y": 380,
+        "x": 820,
+        "y": 360,
         "wires": [
             [
                 "64865776.81c008"
@@ -4831,6 +4827,72 @@
         "x": 1170,
         "y": 700,
         "wires": []
+    },
+    {
+        "id": "0c15b4a613dc52b1",
+        "type": "switch",
+        "z": "c24acee5.55115",
+        "name": "not zero",
+        "property": "count",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 3,
+        "x": 100,
+        "y": 380,
+        "wires": [
+            [
+                "807fb12db7497bb3"
+            ],
+            [
+                "807fb12db7497bb3"
+            ],
+            [
+                "ae1fb466.09b438"
+            ]
+        ]
+    },
+    {
+        "id": "807fb12db7497bb3",
+        "type": "change",
+        "z": "c24acee5.55115",
+        "name": "count=0",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "count=0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 320,
+        "wires": [
+            [
+                "ec5fe2c2.192f1"
+            ]
+        ]
     },
     {
         "id": "9819f41.7ab5308",
@@ -4966,7 +5028,7 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "DROP TABLE Loans",
+        "topic": "DROP TABLE Members",
         "payload": "",
         "payloadType": "date",
         "x": 130,
