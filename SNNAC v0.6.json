@@ -29,14 +29,6 @@
         "info": ""
     },
     {
-        "id": "134203a1625ebddf",
-        "type": "tab",
-        "label": "MQTT",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "07dd62fea7f5774f",
         "type": "tab",
         "label": "NFT TOML Generator",
@@ -412,8 +404,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 490,
-        "y": 520,
+        "x": 390,
+        "y": 380,
         "wires": [
             [
                 "b234e559a2978913",
@@ -431,8 +423,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 500,
-        "y": 600,
+        "x": 400,
+        "y": 420,
         "wires": [
             [
                 "b234e559a2978913",
@@ -450,8 +442,8 @@
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is deployed.\nvar network = \"test\"\nflow.set('network',network);",
         "finalize": "",
-        "x": 500,
-        "y": 680,
+        "x": 400,
+        "y": 460,
         "wires": [
             [
                 "b234e559a2978913",
@@ -481,8 +473,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 350,
-        "y": 740,
+        "x": 250,
+        "y": 520,
         "wires": [
             [],
             [
@@ -509,30 +501,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 540,
-        "y": 740,
+        "x": 440,
+        "y": 520,
         "wires": [
             [
                 "44d9711ddd308977"
-            ]
-        ]
-    },
-    {
-        "id": "5f56bec27facfb74",
-        "type": "function",
-        "z": "371740748292f1c0",
-        "name": "buyer",
-        "func": "var buyer = msg.payload\nflow.set('buyer',buyer);\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 490,
-        "y": 120,
-        "wires": [
-            [
-                "1dc19f74c4d2dd89"
             ]
         ]
     },
@@ -542,29 +515,9 @@
         "z": "371740748292f1c0",
         "name": "CHECK NFT BALANCE",
         "info": "",
-        "x": 500,
-        "y": 340,
+        "x": 460,
+        "y": 260,
         "wires": []
-    },
-    {
-        "id": "1dc19f74c4d2dd89",
-        "type": "http request",
-        "z": "371740748292f1c0",
-        "name": "",
-        "method": "GET",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "https://horizon.stellar.org/accounts/GAYOLLLUIZE4DZMBB2ZBKGBUBZLIOYU6XFLW37GBP2VZD3ABNXCW4BVA",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "senderr": false,
-        "x": 650,
-        "y": 120,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "176dc770a4f9468c",
@@ -582,8 +535,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1360,
-        "y": 460,
+        "x": 1260,
+        "y": 420,
         "wires": [
             [
                 "e6bcdc618d48b4aa",
@@ -604,8 +557,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1430,
-        "y": 400,
+        "x": 1330,
+        "y": 360,
         "wires": []
     },
     {
@@ -619,8 +572,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1110,
-        "y": 440,
+        "x": 1010,
+        "y": 400,
         "wires": [
             [
                 "176dc770a4f9468c",
@@ -641,8 +594,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1270,
-        "y": 400,
+        "x": 1170,
+        "y": 360,
         "wires": []
     },
     {
@@ -656,8 +609,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 180,
+        "x": 520,
+        "y": 120,
         "wires": [
             [
                 "12983259244d19a0",
@@ -671,8 +624,8 @@
         "z": "371740748292f1c0",
         "name": "NFC SCANNED",
         "info": "",
-        "x": 300,
-        "y": 1000,
+        "x": 360,
+        "y": 620,
         "wires": []
     },
     {
@@ -705,8 +658,8 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 240,
-        "y": 680,
+        "x": 140,
+        "y": 460,
         "wires": [
             [
                 "55f9a08003d7a000",
@@ -732,8 +685,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 250,
-        "y": 600,
+        "x": 150,
+        "y": 420,
         "wires": [
             [
                 "33ba0f782aa8e263"
@@ -758,8 +711,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 250,
-        "y": 520,
+        "x": 150,
+        "y": 380,
         "wires": [
             [
                 "8fa2021645f5915c"
@@ -784,8 +737,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 250,
-        "y": 460,
+        "x": 150,
+        "y": 340,
         "wires": [
             [
                 "519319e5ead52edf"
@@ -810,8 +763,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 250,
-        "y": 180,
+        "x": 310,
+        "y": 120,
         "wires": [
             [
                 "a98cdf8611361bf9"
@@ -831,8 +784,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 860,
-        "y": 220,
+        "x": 800,
+        "y": 140,
         "wires": []
     },
     {
@@ -848,8 +801,8 @@
         "format": "{{msg.topic}}",
         "layout": "row-spread",
         "className": "",
-        "x": 870,
-        "y": 160,
+        "x": 810,
+        "y": 100,
         "wires": []
     },
     {
@@ -865,8 +818,8 @@
         "format": "{{msg.balance}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1910,
-        "y": 520,
+        "x": 1760,
+        "y": 500,
         "wires": []
     },
     {
@@ -882,8 +835,8 @@
         "format": "{{msg.topic}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1170,
-        "y": 600,
+        "x": 1770,
+        "y": 460,
         "wires": []
     },
     {
@@ -900,8 +853,8 @@
         "raw": false,
         "topic": "",
         "name": "",
-        "x": 740,
-        "y": 740,
+        "x": 640,
+        "y": 520,
         "wires": []
     },
     {
@@ -913,24 +866,6 @@
         "x": 470,
         "y": 60,
         "wires": []
-    },
-    {
-        "id": "044d12cdee4bdfbf",
-        "type": "function",
-        "z": "371740748292f1c0",
-        "name": "Check Balances",
-        "func": "const fetch = global.get(\"nodefetch\");\n\nvar StellarSdk = global.get(\"stellarsdk\");\n// create a completely new and unique pair of keys\n// see more about KeyPair objects: https://stellar.github.io/js-stellar-sdk/Keypair.html\nconst key = msg.payload;\n\n\nconst server = new StellarSdk.Server(\"https://horizon-testnet.stellar.org\");\n// the JS SDK uses promises for most actions, such as retrieving an account\nconst account = await server.loadAccount(key);\n//console.log(\"Balances for account: \" + pair.publicKey());\nmsg.topic = \"Balances for account: \" + key\n\nvar bals = \"\";\n\naccount.balances.forEach(function (balance) {\n  console.log(\"Type:\", balance.asset_type, \", Balance:\", balance.balance);\n  msg.payload = \"Type: \"+ balance.asset_code+\", Balance: \"+balance.balance+\" \\n \"\n  //node.send(msg)\n  bals = bals +\" \"+ msg.payload\n});\n\nmsg.payload = bals\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1130,
-        "y": 520,
-        "wires": [
-            [
-                "176dc770a4f9468c"
-            ]
-        ]
     },
     {
         "id": "ead4202627e7e605",
@@ -945,8 +880,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1860,
-        "y": 460,
+        "x": 1670,
+        "y": 360,
         "wires": []
     },
     {
@@ -960,8 +895,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1690,
-        "y": 460,
+        "x": 1530,
+        "y": 420,
         "wires": [
             [
                 "ead4202627e7e605",
@@ -1011,8 +946,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 460,
+        "x": 400,
+        "y": 340,
         "wires": [
             [
                 "b234e559a2978913",
@@ -1058,8 +993,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 328.57142639160156,
-        "y": 1184.28564453125,
+        "x": 250,
+        "y": 780,
         "wires": [
             [
                 "5de7e4855e9bba4d"
@@ -1077,8 +1012,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 538.5714263916016,
-        "y": 1184.28564453125,
+        "x": 460,
+        "y": 780,
         "wires": [
             []
         ]
@@ -1096,8 +1031,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1440,
-        "y": 1600,
+        "x": 1740,
+        "y": 1280,
         "wires": []
     },
     {
@@ -1120,8 +1055,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 260,
-        "y": 1640,
+        "x": 320,
+        "y": 1260,
         "wires": [
             [
                 "33fdd712fb96c225",
@@ -1143,8 +1078,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 750,
-        "y": 1540,
+        "x": 810,
+        "y": 1200,
         "wires": []
     },
     {
@@ -1158,8 +1093,8 @@
         "initialize": "// Code added here will be run once\n// whenever the node is deployed.\nvar member = 0;\nflow.set('member',member);",
         "finalize": "",
         "libs": [],
-        "x": 590,
-        "y": 1620,
+        "x": 650,
+        "y": 1240,
         "wires": [
             [
                 "39041edad5bd30fc",
@@ -1175,8 +1110,8 @@
         "sqlquery": "msg.topic",
         "sql": "",
         "name": "Members",
-        "x": 760,
-        "y": 1620,
+        "x": 820,
+        "y": 1240,
         "wires": [
             [
                 "44629359eaf3338f"
@@ -1202,8 +1137,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 780,
-        "y": 1700,
+        "x": 840,
+        "y": 1320,
         "wires": [
             [
                 "7ef1329e5a8a48ca"
@@ -1226,8 +1161,8 @@
         "randomUnits": "seconds",
         "drop": false,
         "outputs": 1,
-        "x": 530,
-        "y": 1740,
+        "x": 590,
+        "y": 1360,
         "wires": [
             [
                 "7784c5d610993bcd"
@@ -1250,8 +1185,8 @@
         "randomUnits": "seconds",
         "drop": false,
         "outputs": 1,
-        "x": 900,
-        "y": 1620,
+        "x": 960,
+        "y": 1240,
         "wires": [
             [
                 "28032fbcc96b308f"
@@ -1277,8 +1212,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 780,
-        "y": 1740,
+        "x": 840,
+        "y": 1360,
         "wires": [
             [
                 "7ef1329e5a8a48ca"
@@ -1304,8 +1239,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1080,
-        "y": 1620,
+        "x": 1140,
+        "y": 1240,
         "wires": [
             [
                 "7ef1329e5a8a48ca"
@@ -1325,8 +1260,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 790,
-        "y": 1460,
+        "x": 850,
+        "y": 1540,
         "wires": []
     },
     {
@@ -1342,8 +1277,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 550,
-        "y": 1400,
+        "x": 610,
+        "y": 1480,
         "wires": []
     },
     {
@@ -1367,8 +1302,8 @@
         "topic": "SELECT * FROM Loans ORDER BY LoanID DESC LIMIT 1",
         "payload": "",
         "payloadType": "date",
-        "x": 180,
-        "y": 1380,
+        "x": 240,
+        "y": 1460,
         "wires": [
             [
                 "1623d00dd7665700"
@@ -1386,8 +1321,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 620,
-        "y": 1460,
+        "x": 680,
+        "y": 1540,
         "wires": [
             [
                 "94329b295cee041b"
@@ -1407,8 +1342,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 390,
-        "y": 1400,
+        "x": 450,
+        "y": 1480,
         "wires": []
     },
     {
@@ -1419,8 +1354,8 @@
         "sqlquery": "msg.topic",
         "sql": "",
         "name": "Members",
-        "x": 440,
-        "y": 1460,
+        "x": 500,
+        "y": 1540,
         "wires": [
             [
                 "f75edb68501063ae",
@@ -1439,41 +1374,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 528.5714263916016,
-        "y": 1144.28564453125,
+        "x": 450,
+        "y": 740,
         "wires": [
             [
                 "7ef1329e5a8a48ca",
                 "a0bb1d6e8059824a"
-            ]
-        ]
-    },
-    {
-        "id": "62f0cd6d5c1f5d2e",
-        "type": "inject",
-        "z": "371740748292f1c0",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 348.57142639160156,
-        "y": 1144.28564453125,
-        "wires": [
-            [
-                "11a9f24f86e6560b"
             ]
         ]
     },
@@ -1495,8 +1401,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 308.57142639160156,
-        "y": 1224.28564453125,
+        "x": 230,
+        "y": 820,
         "wires": [
             [
                 "c5da696b97f93178"
@@ -1514,8 +1420,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 528.5714263916016,
-        "y": 1224.28564453125,
+        "x": 450,
+        "y": 820,
         "wires": [
             []
         ]
@@ -1526,8 +1432,8 @@
         "z": "371740748292f1c0",
         "name": "SETUP NEW MEMBER",
         "info": "",
-        "x": 280,
-        "y": 1580,
+        "x": 340,
+        "y": 1200,
         "wires": []
     },
     {
@@ -1543,40 +1449,11 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 290,
-        "y": 1060,
+        "x": 210,
+        "y": 700,
         "wires": [
             [
                 "fc1e9469dd6b997b"
-            ]
-        ]
-    },
-    {
-        "id": "8716d340cbe0f923",
-        "type": "inject",
-        "z": "371740748292f1c0",
-        "name": "1667314085236",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "1667314085236",
-        "payloadType": "str",
-        "x": 180,
-        "y": 1100,
-        "wires": [
-            [
-                "11a9f24f86e6560b"
             ]
         ]
     },
@@ -1593,8 +1470,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 830,
-        "y": 1280,
+        "x": 1130,
+        "y": 680,
         "wires": []
     },
     {
@@ -1610,8 +1487,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 670,
-        "y": 1280,
+        "x": 970,
+        "y": 680,
         "wires": []
     },
     {
@@ -1625,8 +1502,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 810,
-        "y": 1400,
+        "x": 1250,
+        "y": 740,
         "wires": [
             [
                 "6065cf4fd4ef0e91",
@@ -1647,8 +1524,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 510,
-        "y": 1280,
+        "x": 810,
+        "y": 680,
         "wires": []
     },
     {
@@ -1659,8 +1536,8 @@
         "sqlquery": "msg.topic",
         "sql": "",
         "name": "Members",
-        "x": 560,
-        "y": 1340,
+        "x": 900,
+        "y": 740,
         "wires": [
             [
                 "2da4a323547f8afc",
@@ -1679,8 +1556,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 260,
-        "y": 1300,
+        "x": 680,
+        "y": 740,
         "wires": [
             [
                 "b0d2047c677fdea3",
@@ -1699,8 +1576,8 @@
         "initialize": "// Code added here will be run once\n// whenever the node is deployed.\n//msg.topic = \"SELECT * FROM Loans ORDER BY LoanID DESC LIMIT 1\"\n//node.send(msg);",
         "finalize": "",
         "libs": [],
-        "x": 230,
-        "y": 1460,
+        "x": 290,
+        "y": 1540,
         "wires": [
             [
                 "5a136996c94689f2",
@@ -1721,8 +1598,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1470,
-        "y": 1340,
+        "x": 1810,
+        "y": 680,
         "wires": []
     },
     {
@@ -1736,8 +1613,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1300,
-        "y": 1340,
+        "x": 1680,
+        "y": 740,
         "wires": [
             [
                 "bfb0e527b1e8bc17",
@@ -1761,8 +1638,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 970,
-        "y": 1340,
+        "x": 1460,
+        "y": 740,
         "wires": [
             [
                 "ca9aa771c6236b7d",
@@ -1783,8 +1660,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1150,
-        "y": 1260,
+        "x": 1490,
+        "y": 680,
         "wires": []
     },
     {
@@ -1800,8 +1677,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1450,
-        "y": 1460,
+        "x": 1750,
+        "y": 1080,
         "wires": []
     },
     {
@@ -1821,8 +1698,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 500,
-        "y": 1080,
+        "x": 420,
+        "y": 700,
         "wires": [
             [
                 "11a9f24f86e6560b",
@@ -1850,8 +1727,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 1340,
-        "y": 1400,
+        "x": 1760,
+        "y": 800,
         "wires": [
             [
                 "4ac4ff743af47e80"
@@ -1872,8 +1749,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1280,
-        "y": 1500,
+        "x": 1340,
+        "y": 880,
         "wires": [
             [
                 "4ac4ff743af47e80"
@@ -1891,8 +1768,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1170,
-        "y": 1420,
+        "x": 1330,
+        "y": 960,
         "wires": [
             [
                 "4ac4ff743af47e80"
@@ -1917,8 +1794,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 720,
-        "y": 1340,
+        "x": 1060,
+        "y": 740,
         "wires": [
             [
                 "359d5c705169041f"
@@ -1932,7 +1809,7 @@
         "id": "359d5c705169041f",
         "type": "change",
         "z": "371740748292f1c0",
-        "name": "",
+        "name": "NFC not in DB",
         "rules": [
             {
                 "t": "set",
@@ -1947,8 +1824,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1020,
-        "y": 1480,
+        "x": 1360,
+        "y": 920,
         "wires": [
             [
                 "4ac4ff743af47e80"
@@ -1956,40 +1833,14 @@
         ]
     },
     {
-        "id": "c8c7f99425922aa9",
-        "type": "inject",
+        "id": "1a58ce526bfdb991",
+        "type": "comment",
         "z": "371740748292f1c0",
-        "name": "clear",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "str",
-        "x": 90,
-        "y": 380,
-        "wires": [
-            [
-                "c5f6cbc7bcb88217",
-                "4824c08950367102",
-                "7f70e081f2c4d343",
-                "d9dd78ce93647ebf",
-                "320a63c8fcfe6481",
-                "53bf767a4dc4c5de",
-                "e78783d064dc0f6d",
-                "11a9f24f86e6560b"
-            ]
-        ]
+        "name": "CHECK/SET DB MAX MEMBER",
+        "info": "",
+        "x": 350,
+        "y": 1400,
+        "wires": []
     },
     {
         "id": "b89318e8.fe7498",
@@ -3818,59 +3669,13 @@
         ]
     },
     {
-        "id": "5b2c21f7.bd5df",
-        "type": "inject",
-        "z": "c24acee5.55115",
-        "name": "",
-        "props": [
-            {
-                "p": "secret",
-                "v": "SBSZQMYX2EAT6MGDOAJ3OONFHT6TVVWLLAZEESRIQ7G3CYLHTCWTC3UX",
-                "vt": "str"
-            },
-            {
-                "p": "name",
-                "v": "COOL",
-                "vt": "str"
-            },
-            {
-                "p": "iss",
-                "v": "GBN5VTPXODILAQTMMB23ML5B7RKF657YXXALLWFKGZPSW53QGR6OUG4L",
-                "vt": "str"
-            },
-            {
-                "p": "op",
-                "v": "changeTrust",
-                "vt": "str"
-            },
-            {
-                "p": "dest",
-                "v": "GAC4LTCWBQAVRNXP67QMT55KZ3BIYPVMLIC46FYSO6HN2ZFZLFKW5WJX",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "str",
-        "x": 170,
-        "y": 180,
-        "wires": [
-            [
-                "e6f94184.3fe5f"
-            ]
-        ]
-    },
-    {
         "id": "224ae177.363a9e",
         "type": "comment",
         "z": "c24acee5.55115",
         "name": "Create Multiple NFTs",
         "info": "",
-        "x": 350,
-        "y": 120,
+        "x": 340,
+        "y": 100,
         "wires": []
     },
     {
@@ -4042,15 +3847,15 @@
         "id": "e6f94184.3fe5f",
         "type": "function",
         "z": "c24acee5.55115",
-        "name": "Setup StellarSDK flow.transaction \\n using generated keypair",
+        "name": "TESTNET \\n Setup StellarSDK flow.transaction \\n using generated keypair",
         "func": "var secretiss = flow.get('secretiss', secretiss)\nmsg.secretiss=secretiss\n\nvar StellarSdk = global.get(\"stellarsdk\");\nvar server = new StellarSdk.Server(\"https://horizon-testnet.stellar.org\");\n\nvar asset = flow.get('asset',asset)\n\n//var op = msg.op\nflow.set('StellarSdk',StellarSdk);\nflow.set('server',server);\n//node.send(msg)\n\n//const pair = StellarSdk.Keypair.random();\n//msg.secret=pair.secret();\n//msg.public=pair.publicKey();\n\n//var secretiss = msg.secret;\nvar pair = StellarSdk.Keypair.fromSecret(secretiss);\nvar assetiss = pair.publicKey()\nflow.set('assetiss',assetiss)\nmsg.public=assetiss\n\nvar secretdist = flow.get('secretdist',secretdist);\nvar sourceKeys = StellarSdk.Keypair.fromSecret(secretdist);\n\n\nvar transaction;\n\n//node.send(msg)\n\nserver\n  .loadAccount(sourceKeys.publicKey())\n\n  .then(function (sourceAccount) {\n    // Start building the transaction.\n    transaction = new StellarSdk.TransactionBuilder(sourceAccount, {\n      fee: StellarSdk.BASE_FEE,\n      networkPassphrase: StellarSdk.Networks.TESTNET,\n    })\n      .addOperation(\n        StellarSdk.Operation.createAccount({\n          destination: msg.public,\n          startingBalance: \"1.5\",\n          source: sourceKeys.publicKey()\n        }),\n      )\n      \n      flow.set('transaction',transaction);\n      node.send(msg)\n  })\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 410,
-        "y": 180,
+        "x": 740,
+        "y": 280,
         "wires": [
             [
                 "51452265.044b4c",
@@ -4070,8 +3875,8 @@
         "label": "",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 1340,
-        "y": 500,
+        "x": 2000,
+        "y": 480,
         "wires": []
     },
     {
@@ -4093,8 +3898,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1060,
-        "y": 500,
+        "x": 1720,
+        "y": 480,
         "wires": [
             [
                 "ec5fe2c2.192f1"
@@ -4112,8 +3917,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
-        "y": 180,
+        "x": 1040,
+        "y": 320,
         "wires": [
             [
                 "1421f444.b1155c",
@@ -4132,8 +3937,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1070,
-        "y": 420,
+        "x": 1730,
+        "y": 400,
         "wires": [
             [
                 "ec5fe2c2.192f1",
@@ -4152,8 +3957,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 850,
-        "y": 180,
+        "x": 1210,
+        "y": 320,
         "wires": [
             [
                 "b2abbfc7.db2ea",
@@ -4183,8 +3988,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 730,
-        "y": 280,
+        "x": 1390,
+        "y": 320,
         "wires": [
             [
                 "6a210153.80028",
@@ -4205,8 +4010,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 1100,
-        "y": 340,
+        "x": 1580,
+        "y": 320,
         "wires": [
             [
                 "51452265.044b4c",
@@ -4273,8 +4078,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1320,
-        "y": 440,
+        "x": 1980,
+        "y": 360,
         "wires": [
             [
                 "ec5fe2c2.192f1"
@@ -4303,8 +4108,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 280,
-        "y": 380,
+        "x": 480,
+        "y": 320,
         "wires": [
             [
                 "e6f94184.3fe5f"
@@ -4318,15 +4123,15 @@
         "id": "6653b8d.1f9f648",
         "type": "function",
         "z": "c24acee5.55115",
-        "name": "Setup StellarSDK flow.transaction \\n fund new keypair",
+        "name": "MAINNET \\n Setup StellarSDK flow.transaction \\n fund new keypair",
         "func": "var secretiss = flow.get('secretiss', secretiss)\nmsg.secretiss = secretiss\n\nvar StellarSdk = global.get(\"stellarsdk\");\nvar server = new StellarSdk.Server(\"https://horizon.stellar.org\");\n\nvar asset = flow.get('asset', asset)\n\n//var op = msg.op\nflow.set('StellarSdk', StellarSdk);\nflow.set('server', server);\n//node.send(msg)\n\n//const pair = StellarSdk.Keypair.random();\n//msg.secret=pair.secret();\n//msg.public=pair.publicKey();\n\n//var secretiss = msg.secret;\nvar pair = StellarSdk.Keypair.fromSecret(secretiss);\nvar assetiss = pair.publicKey()\nflow.set('assetiss', assetiss)\nmsg.public = assetiss\n\nvar secretdist = flow.get('secretdist', secretdist);\nvar sourceKeys = StellarSdk.Keypair.fromSecret(secretdist);\n\n\nvar transaction;\n\n//node.send(msg)\n\nserver\n  .loadAccount(sourceKeys.publicKey())\n\n  .then(function (sourceAccount) {\n    // Start building the transaction.\n    transaction = new StellarSdk.TransactionBuilder(sourceAccount, {\n      fee: StellarSdk.BASE_FEE,\n      networkPassphrase: StellarSdk.Networks.PUBLIC,\n    })\n      .addOperation(\n        StellarSdk.Operation.createAccount({\n          destination: msg.public,\n          startingBalance: \"1.5\",\n          source: sourceKeys.publicKey()\n        }),\n      )\n\n    flow.set('transaction', transaction);\n    node.send(msg)\n  })\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 480,
+        "x": 740,
+        "y": 380,
         "wires": [
             [
                 "51452265.044b4c",
@@ -4400,8 +4205,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1320,
-        "y": 340,
+        "x": 1510,
+        "y": 260,
         "wires": []
     },
     {
@@ -4417,8 +4222,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1310,
-        "y": 400,
+        "x": 1890,
+        "y": 320,
         "wires": []
     },
     {
@@ -4427,8 +4232,8 @@
         "z": "c24acee5.55115",
         "name": "Bug - Cannot create more than 31 \\n Makes 1 more than requested - #00",
         "info": "",
-        "x": 1180,
-        "y": 560,
+        "x": 2010,
+        "y": 540,
         "wires": []
     },
     {
@@ -4444,8 +4249,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 990,
-        "y": 100,
+        "x": 1330,
+        "y": 260,
         "wires": []
     },
     {
@@ -4461,8 +4266,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 790,
-        "y": 100,
+        "x": 1110,
+        "y": 260,
         "wires": []
     },
     {
@@ -4478,8 +4283,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 610,
-        "y": 100,
+        "x": 850,
+        "y": 200,
         "wires": []
     },
     {
@@ -4495,8 +4300,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 690,
-        "y": 520,
+        "x": 910,
+        "y": 480,
         "wires": []
     },
     {
@@ -4657,7 +4462,7 @@
         "z": "c24acee5.55115",
         "name": "Generate Keypair",
         "info": "",
-        "x": 340,
+        "x": 570,
         "y": 740,
         "wires": []
     },
@@ -4780,8 +4585,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 820,
-        "y": 360,
+        "x": 1500,
+        "y": 400,
         "wires": [
             [
                 "64865776.81c008"
@@ -4802,8 +4607,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 910,
-        "y": 660,
+        "x": 1730,
+        "y": 560,
         "wires": [
             [
                 "ec5fe2c2.192f1",
@@ -4824,8 +4629,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1170,
-        "y": 700,
+        "x": 1810,
+        "y": 640,
         "wires": []
     },
     {
@@ -4853,7 +4658,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 3,
-        "x": 100,
+        "x": 280,
         "y": 380,
         "wires": [
             [
@@ -4886,8 +4691,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 460,
-        "y": 320,
+        "x": 540,
+        "y": 600,
         "wires": [
             [
                 "ec5fe2c2.192f1"
@@ -5297,218 +5102,6 @@
         ]
     },
     {
-        "id": "6160564216bcd75d",
-        "type": "mqtt in",
-        "z": "134203a1625ebddf",
-        "name": "",
-        "topic": "#",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "9b2d30969434d362",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 210,
-        "y": 160,
-        "wires": [
-            [
-                "bedf5eb8851ddc70"
-            ]
-        ]
-    },
-    {
-        "id": "339e10dd9b568a10",
-        "type": "mqtt in",
-        "z": "134203a1625ebddf",
-        "name": "",
-        "topic": "d/e32_06/NFC_UID",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "9b2d30969434d362",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 250,
-        "y": 220,
-        "wires": [
-            [
-                "8f61a2352a2516c3"
-            ]
-        ]
-    },
-    {
-        "id": "56590f557deff169",
-        "type": "mqtt in",
-        "z": "134203a1625ebddf",
-        "name": "",
-        "topic": "d/e32_06/NFC_Payload",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "9b2d30969434d362",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 260,
-        "y": 280,
-        "wires": [
-            [
-                "e2efb5e85a560210"
-            ]
-        ]
-    },
-    {
-        "id": "bedf5eb8851ddc70",
-        "type": "debug",
-        "z": "134203a1625ebddf",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 480,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "8f61a2352a2516c3",
-        "type": "debug",
-        "z": "134203a1625ebddf",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 480,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "e2efb5e85a560210",
-        "type": "debug",
-        "z": "134203a1625ebddf",
-        "name": "debug 3",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 480,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "08465655564d13d6",
-        "type": "mqtt out",
-        "z": "134203a1625ebddf",
-        "name": "",
-        "topic": "test",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "9b2d30969434d362",
-        "x": 470,
-        "y": 380,
-        "wires": []
-    },
-    {
-        "id": "a4308d8723b4e063",
-        "type": "inject",
-        "z": "134203a1625ebddf",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 280,
-        "y": 380,
-        "wires": [
-            [
-                "08465655564d13d6",
-                "54be8db2b82e0136"
-            ]
-        ]
-    },
-    {
-        "id": "54be8db2b82e0136",
-        "type": "debug",
-        "z": "134203a1625ebddf",
-        "name": "debug 4",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 500,
-        "y": 460,
-        "wires": []
-    },
-    {
-        "id": "b8ab8d4a9ae3f454",
-        "type": "mqtt in",
-        "z": "134203a1625ebddf",
-        "name": "",
-        "topic": "d/e32_006/nfc_001",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "9b2d30969434d362",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 270,
-        "y": 340,
-        "wires": [
-            [
-                "8eda0f0bb8fc9b05"
-            ]
-        ]
-    },
-    {
-        "id": "8eda0f0bb8fc9b05",
-        "type": "debug",
-        "z": "134203a1625ebddf",
-        "name": "debug 5",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 480,
-        "y": 340,
-        "wires": []
-    },
-    {
         "id": "83645f1a61668799",
         "type": "ui_text_input",
         "z": "07dd62fea7f5774f",
@@ -5602,7 +5195,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 620,
+        "x": 670,
         "y": 600,
         "wires": [
             [
@@ -5909,22 +5502,6 @@
         ]
     },
     {
-        "id": "fde5e6737b551d11",
-        "type": "function",
-        "z": "07dd62fea7f5774f",
-        "name": "",
-        "func": "var code = flow.get('code',code);\nvar issuer = flow.get('issuer',issuer);\nvar decimals = flow.get('decimals',decimals);\nvar anchored = flow.get('anchored',anchored);\nvar name = flow.get('name',name);\nvar desc = flow.get('desc',desc);\nvar conditions = flow.get('conditions',conditions);\nvar image = flow.get('image',image);\n\nmsg.payload=\"[[CURRENCIES]]\\n\"+'code=\"'+code+'\"\\n'+'issuer=\"'+issuer+'\"\\n'+'decimals='+decimals+'\\n'+\"anchored=\"+anchored+'\\n'+'name=\"'+name+'\"\\n'+'desc=\"'+desc+'\"\\n'+'conditions=\"'+conditions+'\"\\n'+'image=\"'+image+'\"'\n//msg.payload=msg.payload+'code=\"'+code+'\"'+'issuer=\"'\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 640,
-        "y": 480,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "b0974bc5b407673f",
         "type": "switch",
         "z": "07dd62fea7f5774f",
@@ -5944,8 +5521,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 470,
-        "y": 660,
+        "x": 510,
+        "y": 600,
         "wires": [
             [
                 "deb59ee06c041b88"
@@ -5965,8 +5542,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 520,
-        "y": 780,
+        "x": 640,
+        "y": 740,
         "wires": [
             [
                 "b0974bc5b407673f"
@@ -6002,8 +5579,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 590,
-        "y": 680,
+        "x": 670,
+        "y": 640,
         "wires": [
             [
                 "65687bc710ae1fd3"
